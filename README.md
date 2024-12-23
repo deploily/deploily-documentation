@@ -1,4 +1,4 @@
-# deploily-documentation
+# 📚 Deploily Documentation
 
 ## Tools tailored for different needs:
 
@@ -59,3 +59,11 @@ For General Documentation: MkDocs with Material theme for simple sites, Sphinx f
 ## Useful links
 
 - [https://squidfunk.github.io/mkdocs-material/getting-started/](https://squidfunk.github.io/mkdocs-material/getting-started/)
+
+
+# 🛠️ Development
+
+```bash
+npm run build
+
+npm run serve
