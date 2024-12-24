@@ -1,7 +1,14 @@
+---
+id: intro
+title: Introduction
+sidebar_position: 1
+---
 
+# Introduction
 
-
-
+Deploy your projects with ease—no DevOps skills needed.  
+We offer free APIs and powerful deployment infrastructure to make your life easier.  
+Focus on what you do best, while we handle the deployment for you.
 
 <!-- sidebar_position: 1
 ---
