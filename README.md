@@ -42,7 +42,7 @@ If the **Rebuild** prompt don't shows up :
 ## 🛠️ Development
 
 ```bash
-cd src
+cd documentation
 npm install
 npm run start
 ```
