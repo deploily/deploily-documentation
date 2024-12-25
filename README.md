@@ -44,14 +44,16 @@ If the **Rebuild** prompt don't shows up :
 ```bash
 cd documentation
 npm install
-npm run start
+npm run start  # ! NOT WORKING
 ```
 
 ## Build
 
 ```bash
+cd documentation
 npm run build
 npm run serve
+cp -R build ../docs
 ```
 
 ## Useful links

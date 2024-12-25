@@ -124,12 +124,23 @@ const config = {
             title: 'More',
             items: [
               {
+                label: 'Deploily Cloud',
+                href: 'https://deploily.cloud',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/deploily',
               },
               {
-                label: 'Deploily Cloud',
-                href: 'https://deploily.cloud',
+                label: "Facebook",
+                href: "https://www.facebook.com/deploily",
+              }, {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/showcase/deploily",
+              },
+              {
+                label: 'Transformatek',
+                href: 'https://transformatek.dz',
               },
             ],
           },
