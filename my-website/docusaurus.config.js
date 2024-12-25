@@ -127,10 +127,14 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/deploily',
               },
+              {
+                label: 'Deploily Cloud',
+                href: 'https://deploily.cloud',
+              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Deploily.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Transformatek.`,
       },
       prism: {
         theme: prismThemes.github,
