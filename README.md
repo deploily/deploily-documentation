@@ -56,6 +56,69 @@ npm run serve
 cp -R build ../docs
 ```
 
+## API Doc using [@stoplight/elements](https://www.npmjs.com/package/@stoplight/elements)
+
+* install packages :
+    ```
+    @stoplight/elements,buffer,docusaurus-plugin-sass, process , sass, url
+    ```
+
+* Add plugins section to `docusaurus.config.js` file
+
+    ```
+    .....
+    import { ProvidePlugin } from "webpack";
+    .......
+    ...........
+    ..................
+
+    plugins: [
+        "docusaurus-plugin-sass",
+        // Add custom webpack config to make @stoplight/elements work
+        () => ({
+        name: "custom-webpack-config",
+        configureWebpack: () => {
+            return {
+            module: {
+                rules: [
+                {
+                    test: /\.m?js/,
+                    resolve: {
+                    fullySpecified: false,
+                    },
+                },
+                ],
+            },
+            plugins: [
+                new ProvidePlugin({
+                process: require.resolve("process/browser"),
+                }),
+            ],
+            resolve: {
+                fallback: {
+                buffer: require.resolve("buffer"),
+                stream: false,
+                path: false,
+                process: false,
+                },
+            },
+            };
+        },
+        }),
+    ],
+
+    .....
+
+    ```
+* Useful examples:
+
+  * [codat-docs](https://github.com/codatio/codat-docs/tree/main)
+
+  * [docusaurus-stoplight-elements](https://github.com/yhuard/docusaurus-stoplight-elements/tree/main)
+
+
+
+
 ## Useful links
 
 - [https://squidfunk.github.io/mkdocs-material/getting-started/](https://squidfunk.github.io/mkdocs-material/getting-started/)
