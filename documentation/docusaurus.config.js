@@ -9,6 +9,8 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from 'prism-react-renderer';
+import { ProvidePlugin } from "webpack";
+
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -152,6 +154,41 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+
+  plugins: [
+    "docusaurus-plugin-sass",
+    // Add custom webpack config to make @stoplight/elements work
+    () => ({
+      name: "custom-webpack-config",
+      configureWebpack: () => {
+        return {
+          module: {
+            rules: [
+              {
+                test: /\.m?js/,
+                resolve: {
+                  fullySpecified: false,
+                },
+              },
+            ],
+          },
+          plugins: [
+            new ProvidePlugin({
+              process: require.resolve("process/browser"),
+            }),
+          ],
+          resolve: {
+            fallback: {
+              buffer: require.resolve("buffer"),
+              stream: false,
+              path: false,
+              process: false,
+            },
+          },
+        };
+      },
+    }),
+  ],
 };
 
 export default config;
