@@ -11,17 +11,16 @@ module.exports = {
     {
       type: 'category',
       label: 'API Documentation',
+      link: {
+        type: 'doc',
+        id: 'ors-docs', // This should be `docs/ors-docs.md`
+      },
       items: [
         {
           type: 'link',
-          label: 'API Reference',
-          href: '/stopLightapi', // This links directly to `/api`
-        },
-        {
-          type: 'link',
-          label: 'API Reference',
-          href: '/swagger-api', // This links directly to `/api`
-        },
+          label: 'Open route service',
+          href: '/ors-api-docs'
+        }
       ],
     },
   ],

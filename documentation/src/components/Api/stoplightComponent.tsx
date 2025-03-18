@@ -7,7 +7,7 @@ interface StoplightProps {
 }
 
 
-export function Stoplight({ apiDescriptionUrl }: StoplightProps) {
+function Stoplight({ apiDescriptionUrl }: StoplightProps) {
 
   if (!API) return <p>Loading...</p>;
   return (
