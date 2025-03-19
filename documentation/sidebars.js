@@ -11,15 +11,10 @@ module.exports = {
     {
       type: 'category',
       label: 'API Documentation',
-      link: {
+      items: [
+        {  
         type: 'doc',
         id: 'ors-docs', // This should be `docs/ors-docs.md`
-      },
-      items: [
-        {
-          type: 'link',
-          label: 'Open route service',
-          href: '/ors-api-docs'
         }
       ],
     },
