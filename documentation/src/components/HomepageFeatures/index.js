@@ -1,68 +1,44 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import React from "react";
+import styles from "./styles.module.css"; // Create CSS module for styling if needed.
 
-const FeatureList = [
+const features = [
   {
-    title: 'Build Deployment Infrastructure',
-    imageSrc: '/img/deployement.webp',
-    description: (
-      <>
-        Our platform simplifies building and managing deployment infrastructure. Whether for a single app or multiple services, our
-        scalable solutions grow with you. We provide tools for seamless pipelines, automated scaling, and customizable environments
-        to ensure a robust, reliable system.
-      </>
-    ),
+    title: "EFFORTLESS DEPLOYMENT SIMPLIFIED",
+    description:
+      "Skip the complexities of DevOps! With Deploily, just connect your Git repo, configure your settings, and deploy in seconds — no expertise needed. Whether you're a solo developer or a growing team, Deploily streamlines your workflow, eliminating technical barriers so you can focus on building, not troubleshooting. Deploy faster, smarter, and .",
+    image: "/img/devops.png",
   },
   {
-    title: 'API Services',
-    imageSrc: '/img/api.webp',
-    description: (
-      <>
-        Our API offers powerful, easy-to-use endpoints for integrating features like authentication, databases, and real-time data.
-        Simplify backend complexity and focus on building your app—no server setup, just seamless integration for faster development.
-      </>
-    ),
+    title: "INFRASTRUCTURE MADE EASY",
+    description:
+      "Deploying your app is just the beginning! With Deploily, you can easily set up the infrastructure your solution requires, including databases, storage, and networking. We provide everything your application needs to run smoothly, with scalable and customizable environments that grow with you. Simplify infrastructure management and let Deploily handle the heavy lifting!",
+    image: "/img/infrastructure.png",
   },
   {
-    title: 'Deploy from Git Without DevOps',
-    imageSrc: '/img/git.webp',
-    description: (
-      <>
-
-        Forget traditional DevOps complexities. With our platform, deploy projects
-        directly from Git with a few clicks—no DevOps experience needed. Connect your
-        repository, configure settings, and deploy quickly, streamlining the process
-        and getting your code live faster.
-      </>
-    ),
+    title: "APIS SIMPLIFIED FOR INNOVATION",
+    description:
+      "Unlock the full potential of your applications with our powerful and easy- to - use API services.Seamlessly integrate authentication, databases, and real - time data—without the hassle of backend management.Whether you're launching a startup, scaling an enterprise, or prototyping your next big idea, our APIs handle the complexity, so you can focus on innovation. No server setup, no maintenance—just fast, efficient development.",
+    image: "/img/api.png",
   },
 ];
 
-function Feature({ imageSrc, title, description }) { // Ajout de `description` ici
+const Features = () => {
   return (
-    <div className={styles.container}>
-      <img src={imageSrc} alt="Deployment Illustration" className={styles.image} />
-      <div className={styles.text}>
-        <h2>{title}</h2>
-        <p>
-          {description}
-        </p>
-      </div>
+    <div className={styles.featuresContainer}>
+      {features.map((feature, index) => (
+        <div
+          key={index}
+          className={`${styles.featureCard} ${index % 2 !== 0 ? styles.reverse : ""}`}
+        >
+          <img src={feature.image} alt={feature.title} className={styles.featureImage} />
+          <div className={styles.featureText}>
+            <h3>{feature.title}</h3>
+            <h4>{feature.description}</h4>
+          </div>
+        </div>
+      ))}
     </div>
   );
-}
+};
 
-export default function HomepageFeatures() {
-  return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+export default Features;

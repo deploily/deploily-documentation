@@ -51,7 +51,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:undefined
+          editUrl: undefined
         },
         blog: {
           showReadingTime: true,
@@ -118,10 +118,6 @@ const config = {
             ],
           },
           {
-            title: 'Community',
-            items: [],
-          },
-          {
             title: 'More',
             items: [
               {
@@ -146,6 +142,11 @@ const config = {
             ],
           },
         ],
+        logo: {
+          alt: "Company Logo",
+          src: "/img/logo_name_white.png", // Replace with your actual logo path
+          href: "/",
+        },
         copyright: `Copyright © ${new Date().getFullYear()} Transformatek.`,
       },
       prism: {

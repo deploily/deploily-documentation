@@ -37,3 +37,51 @@
   font-size: 16px;
   line-height: 1.5;
 }
+.featuresContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 20px;
+}
+
+.featureCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+}
+
+/* Ensure images and text stack on smaller screens */
+@media (max-width: 768px) {
+  .featureCard {
+    flex-direction: column !important; /* Stack items vertically */
+    text-align: center;
+  }
+
+  .featureImage {
+    width: 80%; /* Adjust image width for smaller screens */
+    max-width: 300px;
+  }
+}
+
+/* Reverse layout for odd sections */
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.featureImage {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.featureText {
+  flex: 1;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
