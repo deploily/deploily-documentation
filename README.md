@@ -115,7 +115,27 @@ cp -R build ../docs
   * [codat-docs](https://github.com/codatio/codat-docs/tree/main)
 
   * [docusaurus-stoplight-elements](https://github.com/yhuard/docusaurus-stoplight-elements/tree/main)
+### Adding New service API Documentation  
 
+To add a new API documentation entry, follow these steps:  
+
+1. **Add the OpenAPI Specification**  
+   - Place your `openapi.json` or `openapi.yaml` file under:  
+     ```  
+     /static/openapi-files/ors-openapi.json  
+     ```  
+
+2. **Create an MDX Page**  
+   - Inside the `/docs` folder, create an MDX file (e.g., `ors.md`).  
+
+3. **Set Up the API Documentation Renderer**  
+   - In the `/pages` folder, create an API documentation renderer that loads the corresponding OpenAPI file.  
+
+4. **Add a Link to the MDX Page**  
+   - In the MDX page, include a link to the newly created renderer page. The link will open the documentation in a new window.  
+
+5. **Update the Sidebar Navigation**  
+   - Under the `'API Documentation'` category in the sidebar, add the MDX page ID (e.g., `ors-docs`) to ensure it appears in the navigation.  
 
 
 
