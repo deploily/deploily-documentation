@@ -4,7 +4,7 @@
         "url": "https://github.com/komoot/photon"
     },
     "info": {
-        "title": "Komoot Photon",
+        "title": "Photon",
         "version": "0.4.4",
         "license": {
             "name": "Apache-2.0",
@@ -13,7 +13,7 @@
     },
     "servers": [
         {
-            "url": "https://photon.komoot.io"
+            "url": "https://api.deploily.cloud/photon"
         }
     ],
     "paths": {
@@ -24,6 +24,11 @@
                 ],
                 "operationId": "geocoding",
                 "description": "Get coordinates for address",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "parameters": [
                     {
                         "name": "q",
@@ -119,6 +124,11 @@
                 ],
                 "operationId": "reverse",
                 "description": "Get address for coordinates",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "parameters": [
                     {
                         "name": "lon",
@@ -185,6 +195,13 @@
         }
     },
     "components": {
+        "securitySchemes": {
+            "ApiKeyAuth": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "apikey"
+            }
+        },
         "schemas": {
             "PhotonFeature": {
                 "type": "object",

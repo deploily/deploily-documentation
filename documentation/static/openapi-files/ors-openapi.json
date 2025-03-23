@@ -5,9 +5,8 @@
         "description": "This is the openrouteservice API documentation for ORS Core-Version 9.1.1. Documentations for [older Core-Versions](https:\/\/github.com\/GIScience\/openrouteservice-docs\/releases) can be rendered with the [Swagger-Editor](https:\/\/editor-next.swagger.io\/).",
         "contact": {
             "name": "Openrouteservice",
-            "url": "https:\/\/github.com\/GIScience\/openrouteservice",
-            "email": "support@smartmobility.heigit.org"
-        },
+            "url": "https:\/\/github.com\/GIScience\/openrouteservice"
+            },
         "license": {
             "name": "GNU General Public License v3.0",
             "url": "https:\/\/github.com\/GIScience\/openrouteservice\/blob\/main\/LICENSE"
@@ -17,22 +16,8 @@
     },
     "servers": [
         {
-            "url": "https:\/\/api.openrouteservice.org",
+            "url": "https://api.deploily.cloud/ors",
             "description": "Openrouteservice API"
-        },
-        {
-            "url": "http:\/\/localhost:{port}{basePath}",
-            "description": "Development Server",
-            "variables": {
-                "port": {
-                    "description": "Port the local openrouteservice instance runs on",
-                    "default": "8082"
-                },
-                "basePath": {
-                    "description": "Base path of the local openrouteservice instance",
-                    "default": "\/ors"
-                }
-            }
         }
     ],
     "tags": [
@@ -89,6 +74,11 @@
                 ],
                 "summary": "Snapping Service",
                 "description": "Returns a list of points snapped to the nearest edge in the routing graph. In case an appropriate\nsnapping point cannot be found within the specified search radius, \"null\" is returned.\n",
+                  "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "operationId": "getDefault",
                 "parameters": [
                     {
@@ -413,6 +403,11 @@
                 ],
                 "summary": "Snapping Service JSON",
                 "description": "Returns a list of points snapped to the nearest edge in the routing graph. In case an appropriate\nsnapping point cannot be found within the specified search radius, \"null\" is returned.\n",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "operationId": "getJsonSnapping",
                 "parameters": [
                     {
@@ -737,6 +732,11 @@
                 ],
                 "summary": "Snapping Service GeoJSON",
                 "description": "Returns a GeoJSON FeatureCollection of points snapped to the nearest edge in the routing graph.\nIn case an appropriate snapping point cannot be found within the specified search radius,\nit is omitted from the features array. The features provide the 'source_id' property, to match\nthe results with the input location array (IDs start at 0).\n",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "operationId": "getGeoJSONSnapping",
                 "parameters": [
                     {
@@ -1108,6 +1108,11 @@
                 ],
                 "summary": "Matrix Service",
                 "description": "Returns duration or distance matrix for multiple source and destination points.\nBy default a square duration matrix is returned where every point in locations is paired with each other. The result is null if a value can\u2019t be determined.",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "operationId": "getDefault_1",
                 "parameters": [
                     {
@@ -1519,6 +1524,11 @@
                 ],
                 "summary": "Isochrones Service",
                 "description": "The Isochrone Service supports time and distance analyses for one single or multiple locations.\nYou may also specify the isochrone interval or provide multiple exact isochrone range values.\nThis service allows the same range of profile options as the \/directions endpoint,\nwhich help you to further customize your request to obtain a more detailed reachability area response.",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "operationId": "getDefaultIsochrones",
                 "parameters": [
                     {
@@ -2770,6 +2780,11 @@
                 "summary": "Export Service",
                 "description": "Returns a list of points, edges and weights within a given bounding box for a selected profile as JSON. This method does not accept any request body or parameters other than profile, start coordinate, and end coordinate.",
                 "operationId": "getDefault_2",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "parameters": [
                     {
                         "name": "profile",
@@ -3036,6 +3051,11 @@
                 "summary": "Export Service TopoJSON",
                 "description": "Returns a list of edges, edge properties, and their topology within a given bounding box for a selected profile.",
                 "operationId": "getTopoJsonExport",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "parameters": [
                     {
                         "name": "profile",
@@ -3310,6 +3330,11 @@
                 "summary": "Export Service JSON",
                 "description": "Returns a list of points, edges and weights within a given bounding box for a selected profile as JSON.",
                 "operationId": "getJsonExport",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "parameters": [
                     {
                         "name": "profile",
@@ -3576,6 +3601,11 @@
                 "summary": "Directions Service",
                 "description": "Get a basic route between two points with the profile provided. Returned response is in GeoJSON format. This method does not accept any request body or parameters other than profile, start coordinate, and end coordinate.",
                 "operationId": "getSimpleGeoJsonRoute",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "parameters": [
                     {
                         "name": "profile",
@@ -7361,6 +7391,11 @@
                 ],
                 "summary": "Directions Service JSON",
                 "description": "Returns a route between two or more locations for a selected profile and its settings as JSON",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "operationId": "getJsonRoute",
                 "parameters": [
                     {
@@ -10039,6 +10074,11 @@
                 ],
                 "summary": "Directions Service GPX",
                 "description": "Returns a route between two or more locations for a selected profile and its settings as GPX. The schema can be found [here](https:\/\/raw.githubusercontent.com\/GIScience\/openrouteservice-schema\/main\/gpx\/v1\/ors-gpx.xsd)",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "operationId": "getGPXRoute",
                 "parameters": [
                     {
@@ -11071,6 +11111,11 @@
                 ],
                 "summary": "Directions Service GeoJSON",
                 "description": "Returns a route between two or more locations for a selected profile and its settings as GeoJSON",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "operationId": "getGeoJsonRoute",
                 "parameters": [
                     {
@@ -13074,6 +13119,11 @@
                     "Status service"
                 ],
                 "operationId": "getStatus",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -13092,6 +13142,11 @@
             "get": {
                 "tags": [
                     "Health service"
+                ],
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
                 ],
                 "operationId": "fetchHealth",
                 "responses": {
@@ -13115,17 +13170,12 @@
                 ],
                 "summary": "Forward Geocode Service",
                 "description": "Returns a JSON formatted list of objects corresponding to the search input. `boundary.*`-parameters can be combined if they are overlapping. **The interactivity for this enpoint is experimental!** [Please refer to this external Documentation](https:\/\/github.com\/pelias\/documentation\/blob\/master\/search.md#search-the-world)\n",
-                "parameters": [
+                "security": [
                     {
-                        "name": "api_key",
-                        "in": "query",
-                        "description": "Insert your API Key here.\n",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "default": "you-api-key"
-                        }
-                    },
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "parameters": [
                     {
                         "name": "text",
                         "in": "query",
@@ -13402,17 +13452,12 @@
                 ],
                 "summary": "Geocode Autocomplete Service",
                 "description": "**Requests should be throttled when using this endpoint!**\n*Be aware that Responses are asynchronous.*\nReturns a JSON formatted list of objects corresponding to the search input. `boundary.*`-parameters can be combined if they are overlapping. **The interactivity for this enpoint is experimental!** [Please refer to this external Documentation](https:\/\/github.com\/pelias\/documentation\/blob\/master\/autocomplete.md)\n",
-                "parameters": [
+                "security": [
                     {
-                        "name": "api_key",
-                        "in": "query",
-                        "description": "Insert your API Key here.\n",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "default": "your-api-key"
-                        }
-                    },
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "parameters": [
                     {
                         "name": "text",
                         "in": "query",
@@ -13624,17 +13669,12 @@
                 ],
                 "summary": "Structured Forward Geocode Service (beta)",
                 "description": "Returns a JSON formatted list of objects corresponding to the search input. **The interactivity for this enpoint is experimental!** [Please refer to this external Documentation](https:\/\/github.com\/pelias\/documentation\/blob\/master\/structured-geocoding.md#structured-geocoding)\n",
-                "parameters": [
+                "security": [
                     {
-                        "name": "api_key",
-                        "in": "query",
-                        "description": "Insert your API Key here.\n",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "default": "your-api-key"
-                        }
-                    },
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "parameters": [
                     {
                         "name": "address",
                         "in": "query",
@@ -13965,17 +14005,12 @@
                 ],
                 "summary": "Reverse Geocode Service",
                 "description": "Returns the next enclosing object with an address tag which surrounds the given coordinate. **The interactivity for this enpoint is experimental!** [Please refer to this external Documentation](https:\/\/github.com\/pelias\/documentation\/blob\/master\/reverse.md#reverse-geocoding)\n",
-                "parameters": [
+                "security": [
                     {
-                        "name": "api_key",
-                        "in": "query",
-                        "description": "Insert your API Key here.\n",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "default": "your-api-key"
-                        }
-                    },
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "parameters": [
                     {
                         "name": "point.lon",
                         "in": "query",
@@ -14124,6 +14159,11 @@
                 ],
                 "summary": "Pois Service",
                 "description": "Returns points of interest in the area surrounding a geometry which can either be a bounding box, polygon or buffered linestring or point.\nFind more examples on [github](https:\/\/github.com\/GIScience\/openpoiservice).\n",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "requestBody": {
                     "description": "body for a post request",
                     "content": {
@@ -14455,6 +14495,11 @@
                 ],
                 "summary": "Elevation Line Service",
                 "description": "This endpoint can take planar 2D line objects and enrich them with elevation from a variety of datasets.\n\nThe input and output formats are:\n  * GeoJSON\n  * Polyline\n  * <a href=\"https:\/\/developers.google.com\/maps\/documentation\/utilities\/polylinealgorithm\">Google's Encoded polyline<\/a> with coordinate precision 5 or 6\n\nExample:\n```\n  # POST LineString as polyline\n  curl -XPOST https:\/\/api.openrouteservice.org\/elevation\/line\n    -H 'Content-Type: application\/json' \\\n    -H 'Authorization: INSERT_YOUR_KEY\n    -d '{\n      \"format_in\": \"polyline\",\n      \"format_out\": \"encodedpolyline5\",\n      \"geometry\": [[13.349762, 38.112952],\n                   [12.638397, 37.645772]]\n        }'\n```\n",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "requestBody": {
                     "description": "Query the elevation of a line in various formats.",
                     "content": {
@@ -14587,17 +14632,12 @@
                 ],
                 "summary": "Elevation Point Service",
                 "description": "This endpoint can take a 2D point and enrich it with elevation from a variety of datasets.\n\nThe output formats are:\n  * GeoJSON\n  * Point\n\nExample:\n```\n  # GET point\n  curl -XGET https:\/\/localhost:5000\/elevation\/point?geometry=13.349762,38.11295\n```\n",
-                "parameters": [
+                "security": [
                     {
-                        "name": "api_key",
-                        "in": "query",
-                        "description": "Insert your API Key here.\n",
-                        "required": true,
-                        "schema": {
-                            "type": "string"
-                        },
-                        "example": "your-api-key"
-                    },
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "parameters": [
                     {
                         "name": "geometry",
                         "in": "query",
@@ -14712,7 +14752,7 @@
                     "Elevation"
                 ],
                 "summary": "Elevation Point Service",
-                "description": "This endpoint can take a 2D point and enrich it with elevation from a variety of datasets.\n\nThe input and output formats are:\n  * GeoJSON\n  * Point\n\nExample:\n```\n  # POST point as GeoJSON\n  # https:\/\/api.openrouteservice.org\/elevation\/point?api_key=YOUR-KEY\n  {\n    \"format_in\": \"geojson\",\n    \"format_out\": \"geojson\",\n    \"geometry\": {\n      \"coordinates\": [13.349762, 38.11295],\n      \"type\": \"Point\"\n    }\n  }\n```\n",
+                "description": "This endpoint can take a 2D point and enrich it with elevation from a variety of datasets.\n\nThe input and output formats are:\n  * GeoJSON\n  * Point\n\nExample:\n```\n  # POST point as GeoJSON\n  # https:\/\/api.openrouteservice.org\/elevation\/point?{\"format_in\": \"geojson\",\n    \"format_out\": \"geojson\",\n    \"geometry\": {\n      \"coordinates\": [13.349762, 38.11295],\n      \"type\": \"Point\"\n    }\n  }\n```\n",
                 "requestBody": {
                     "description": "Query the elevation of a point in various formats.",
                     "content": {
@@ -14841,6 +14881,11 @@
                 ],
                 "summary": "Optimization Service",
                 "description": "The optimization endpoint solves [Vehicle Routing Problems](https:\/\/en.wikipedia.org\/wiki\/Vehicle_routing_problem) and can be used to schedule multiple vehicles and jobs, respecting time windows, capacities and required skills.\n\nThis service is based on the excellent [Vroom project](https:\/\/github.com\/VROOM-Project\/vroom). Please also consult its [API documentation](https:\/\/github.com\/VROOM-Project\/vroom\/blob\/master\/docs\/API.md).\n\nGeneral Info:\n- The expected order for all coordinates arrays is `[lon, lat]`\n- All timings are in seconds\n- All distances are in meters\n- A `time_window` object is a pair of timestamps in the form `[start, end]`\n",
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "requestBody": {
                     "description": "The request body of the optimization request.",
                     "content": {
@@ -16027,6 +16072,13 @@
         }
     },
     "components": {
+        "securitySchemes": {
+            "ApiKeyAuth": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "apikey"
+            }
+        },
         "schemas": {
             "SnappingRequest": {
                 "required": [

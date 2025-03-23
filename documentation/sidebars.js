@@ -14,15 +14,19 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: 'ors-docs', // This should be `docs/ors-docs.md`
+          id: 'ors-docs',
         },
         {
           type: 'doc',
-          id: 'photon-docs', // This should be `docs/ors-docs.md`
+          id: 'photon-docs',
         },
         {
           type: 'doc',
-          id: 'nominatim', // This should be `docs/ors-docs.md`
+          id: 'nominatim',
+        },
+        {
+          type: 'doc',
+          id: 'wilaya-commune-api-docs'
         }
       ],
     },

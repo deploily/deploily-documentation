@@ -141,6 +141,8 @@ To add a new API documentation entry, follow these steps:
 
 ## Useful links
 
-- [https://squidfunk.github.io/mkdocs-material/getting-started/](https://squidfunk.github.io/mkdocs-material/getting-started/)
+- [docusaurus docs](https://docusaurus.io/docs)
+- [editor-next.swagger.io](https://editor-next.swagger.io/)
+
 
 
