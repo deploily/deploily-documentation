@@ -9,6 +9,8 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from 'prism-react-renderer';
+import { ProvidePlugin } from "webpack";
+
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -49,8 +51,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: undefined
         },
         blog: {
           showReadingTime: true,
@@ -117,10 +118,6 @@ const config = {
             ],
           },
           {
-            title: 'Community',
-            items: [],
-          },
-          {
             title: 'More',
             items: [
               {
@@ -145,6 +142,11 @@ const config = {
             ],
           },
         ],
+        logo: {
+          alt: "Company Logo",
+          src: "/img/logo_name_white.png", // Replace with your actual logo path
+          href: "/",
+        },
         copyright: `Copyright © ${new Date().getFullYear()} Transformatek.`,
       },
       prism: {
@@ -152,6 +154,41 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+
+  plugins: [
+    "docusaurus-plugin-sass",
+    // Add custom webpack config to make @stoplight/elements work
+    () => ({
+      name: "custom-webpack-config",
+      configureWebpack: () => {
+        return {
+          module: {
+            rules: [
+              {
+                test: /\.m?js/,
+                resolve: {
+                  fullySpecified: false,
+                },
+              },
+            ],
+          },
+          plugins: [
+            new ProvidePlugin({
+              process: require.resolve("process/browser"),
+            }),
+          ],
+          resolve: {
+            fallback: {
+              buffer: require.resolve("buffer"),
+              stream: false,
+              path: false,
+              process: false,
+            },
+          },
+        };
+      },
+    }),
+  ],
 };
 
 export default config;

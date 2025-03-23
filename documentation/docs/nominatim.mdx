@@ -1,0 +1,25 @@
+---
+id: nominatim
+title: Nominatim API
+hide_title: true  # 👈 Add this line to hide the auto-generated title
+---
+import Link from '@docusaurus/Link';
+import NominatimServicesListContainer from '@site/src/pages/nominatim/nominatimServicesListContainer';
+
+**Nominatim**
+
+The Nominatim API is a web-based geocoding service that provides forward and reverse geocoding capabilities using OpenStreetMap (OSM) data. It allows users to convert addresses or place names into geographic coordinates and retrieve detailed location information from latitude and longitude inputs. Additionally, Nominatim supports address lookup, place search, autocomplete suggestions, and bounding box filtering, making it a powerful tool for location-based applications. Here is some text,
+and you can visit <Link to="/nominatim-api-documentation-page"
+target="_blank"
+style={{ 
+  color: 'var(--ifm-color-primary)', 
+  fontSize: '16px',
+  fontWeight: 'bold',
+  borderRadius: '8px',
+  textDecoration: 'underline',
+  display: 'inline-block',
+  transition: 'background 0.3s ease',
+}}> API playground </Link> for more details.
+
+**Nominatim API services:**
+<NominatimServicesListContainer />
