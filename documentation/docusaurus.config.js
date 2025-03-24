@@ -108,10 +108,6 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Introduction',
-                to: '/docs/intro', // Lien vers la première page de la documentation
-              },
-              {
                 label: 'Getting Started',
                 to: '/docs/getting-started', // Lien vers la deuxième page
               },

@@ -2,10 +2,6 @@ module.exports = {
   docsSidebar: [
     {
       type: 'doc',
-      id: 'intro',
-    },
-    {
-      type: 'doc',
       id: 'getting-started',
     },
     {
@@ -14,11 +10,11 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: 'ors-docs',
+          id: 'ors',
         },
         {
           type: 'doc',
-          id: 'photon-docs',
+          id: 'photon',
         },
         {
           type: 'doc',
@@ -26,7 +22,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'wilaya-commune-api-docs'
+          id: 'wilaya-commune'
         }
       ],
     },
