@@ -14494,7 +14494,7 @@
                     "Elevation"
                 ],
                 "summary": "Elevation Line Service",
-                "description": "This endpoint can take planar 2D line objects and enrich them with elevation from a variety of datasets.\n\nThe input and output formats are:\n  * GeoJSON\n  * Polyline\n  * <a href=\"https:\/\/developers.google.com\/maps\/documentation\/utilities\/polylinealgorithm\">Google's Encoded polyline<\/a> with coordinate precision 5 or 6\n\nExample:\n```\n  # POST LineString as polyline\n  curl -XPOST https:\/\/api.openrouteservice.org\/elevation\/line\n    -H 'Content-Type: application\/json' \\\n    -H 'Authorization: INSERT_YOUR_KEY\n    -d '{\n      \"format_in\": \"polyline\",\n      \"format_out\": \"encodedpolyline5\",\n      \"geometry\": [[13.349762, 38.112952],\n                   [12.638397, 37.645772]]\n        }'\n```\n",
+                "description": "This endpoint can take planar 2D line objects and enrich them with elevation from a variety of datasets.\n\nThe input and output formats are:\n  * GeoJSON\n  * Polyline\n  * <a href=\"https:\/\/developers.google.com\/maps\/documentation\/utilities\/polylinealgorithm\">Google's Encoded polyline<\/a> with coordinate precision 5 or 6",
                 "security": [
                     {
                         "ApiKeyAuth": []
@@ -14752,7 +14752,7 @@
                     "Elevation"
                 ],
                 "summary": "Elevation Point Service",
-                "description": "This endpoint can take a 2D point and enrich it with elevation from a variety of datasets.\n\nThe input and output formats are:\n  * GeoJSON\n  * Point\n\nExample:\n```\n  # POST point as GeoJSON\n  # https:\/\/api.openrouteservice.org\/elevation\/point?{\"format_in\": \"geojson\",\n    \"format_out\": \"geojson\",\n    \"geometry\": {\n      \"coordinates\": [13.349762, 38.11295],\n      \"type\": \"Point\"\n    }\n  }\n```\n",
+                "description": "This endpoint can take a 2D point and enrich it with elevation from a variety of datasets.\n\nThe input and output formats are:\n  * GeoJSON\n  * Point",
                 "requestBody": {
                     "description": "Query the elevation of a point in various formats.",
                     "content": {
