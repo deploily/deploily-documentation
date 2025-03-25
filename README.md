@@ -53,7 +53,7 @@ npm run start  # ! NOT WORKING
 cd documentation
 npm run build
 npm run serve
-cp -R build ../docs
+cp -R build/* ../docs/
 ```
 
 ## API Doc using [@stoplight/elements](https://www.npmjs.com/package/@stoplight/elements)
@@ -115,6 +115,7 @@ cp -R build ../docs
   * [codat-docs](https://github.com/codatio/codat-docs/tree/main)
 
   * [docusaurus-stoplight-elements](https://github.com/yhuard/docusaurus-stoplight-elements/tree/main)
+
 ### Adding New service API Documentation  
 
 To add a new API documentation entry, follow these steps:  
