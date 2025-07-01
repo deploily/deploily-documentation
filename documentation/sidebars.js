@@ -26,6 +26,17 @@ module.exports = {
         }
       ],
     },
+    {
+      type: 'category',
+      label: 'Application',
+      items: [
+        {
+          type: 'doc',
+          id: 'ttk-epay',
+        },
+        
+      ],
+    },
   ],
 };
 
