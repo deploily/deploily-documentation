@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Deploily</title><meta data-rh="true" property="og:title" content="Deploily"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-docusaurus-site.example.com/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://your-docusaurus-site.example.com/img/logo.png"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/ttk-epay/ttkEpayApiContainer"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/ttk-epay/ttkEpayApiContainer"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/ttk-epay/ttkEpayApiContainer" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/ttk-epay/ttkEpayApiContainer" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.c1070d20.css">
+<script src="/assets/js/runtime~main.ec4b0c19.js" defer="defer"></script>
+<script src="/assets/js/main.6b0d6eee.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div style="margin-bottom:50px"><p>TTK ePay offers official SDKs for <strong>Node.js</strong> and <strong>Python</strong>to help developers easily integrate e-payment capabilities into their applications. Below is an overview of the available packages and usage examples.</p><div style="margin-top:20px"><h4 style="margin-bottom:5px;font-weight:bold">📦 Node.js Client</h4><p>Official npm package: <a href="https://www.npmjs.com/package/@deploily/ttk-epay-nodejs-client" target="_blank" rel="noreferrer">@deploily/ttk-epay-nodejs-client</a></p></div><div style="margin-top:20px"><h5 style="margin-bottom:5px;font-weight:bold">Installation</h5><pre><code>npm install @deploily/ttk-epay-nodejs-client</code></pre><h5 style="margin-bottom:5px;font-weight:bold">Example Usage</h5><pre><code>const { ttk_epay } = require(&#x27;@deploily/ttk-epay-nodejs-client&#x27;);
+
+            const client = new ttk_epay({
+              baseUrl: &#x27;https://your-app.com&#x27;,
+              secretKey: &#x27;your-secret-key&#x27;
+            });
+
+            // List invoices
+            const invoices = await client.get_invoices(1, 10);
+            </code></pre><h5 style="margin-bottom:5px;font-weight:bold">Available Methods</h5><ul style="list-style-type:disc;padding-left:20px"><li><code>getInvoices(page, size)</code> – Paginated invoice listing</li><li><code>createInvoice(data)</code> – Create a new invoice</li><li><code>getInvoiceById(invoiceId)</code> – Fetch invoice via ID</li><li><code>updateInvoice(invoiceId, data)</code> – Update an invoice</li><li><code>getPayments(options)</code> – Filter and list payments</li><li><code>getPaymentById(paymentId)</code> – Fetch payment via ID</li><li><code>postPayement(data)</code> – Register a new payment</li><li><code>getPdfRecipt(orderId)</code> – Get a PDF receipt</li><li><code>sendPdfReceiptMail(orderId, email)</code> – Send receipt by email</li></ul></div><div style="margin-top:20px"><h4 style="margin-bottom:5px;font-weight:bold">🐍 Python Client</h4><p>Official PyPi package: <a href="https://pypi.org/project/ttk-epay/" target="_blank" rel="noreferrer">ttk-epay</a> – GitHub source: <a href="https://github.com/deploily/ttk-epay-python-client" target="_blank" rel="noreferrer">ttk-epay-python-client</a></p></div><div style="margin-top:20px"><h5 style="margin-bottom:5px;font-weight:bold">Installation</h5><pre><code>pip install ttk-epay</code></pre></div><div style="margin-top:20px"><h5 style="margin-bottom:5px;font-weight:bold">Example Usage</h5><pre><code>from ttk_epay.client import TtkEpay
+
+client = TtkEpay(
+    base_url=&quot;https://your-app.com&quot;,
+    secret_key=&quot;your-secret-key&quot;
+)
+
+# List invoices
+invoices = client.get_invoices(page=1, size=10)
+</code></pre></div><div style="margin-top:20px"><h5 style="margin-bottom:5px;font-weight:bold">Available Methods</h5><ul style="list-style-type:disc;padding-left:20px"><li><code>get_invoices(page, size)</code></li><li><code>create_invoice(data)</code></li><li><code>get_invoice_by_order_id(order_id)</code></li><li><code>update_invoice(invoice_id, data)</code></li><li><code>get_payments(params)</code></li><li><code>post_payement(data)</code></li><li><code>get_pdf_recipt(order_id)</code></li><li><code>send_pdf_recipt_mail(order_id, email)</code></li></ul></div></div></div>
+</body>
+</html>
