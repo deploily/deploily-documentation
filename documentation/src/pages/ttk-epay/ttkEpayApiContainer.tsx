@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TtkEpayApiContainer() {
   return (
-    <div style={{ marginBottom: 50 }}>
+    <div style={{ marginBottom: 50, paddingInline: 20 }}>
       <p>
         TTK ePay offers official SDKs for <strong>Node.js</strong> and <strong>Python</strong>
         to help developers easily integrate e-payment capabilities into their applications.
