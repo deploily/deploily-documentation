@@ -10,19 +10,19 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: 'ors',
+          id: 'apis/ors',
         },
         {
           type: 'doc',
-          id: 'photon',
+          id: 'apis/photon',
         },
         {
           type: 'doc',
-          id: 'nominatim',
+          id: 'apis/nominatim',
         },
         {
           type: 'doc',
-          id: 'wilaya-commune'
+          id: 'apis/wilaya-commune'
         }
       ],
     },
@@ -32,7 +32,7 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: 'ttk-epay',
+          id: 'applications/ttk-epay',
         },
         
       ],

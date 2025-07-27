@@ -5,8 +5,22 @@ sidebar_position: 2
 hide_title: true
 ---
 
-**Getting Started**
+**🚀 Getting Started with Deploily**
+
+Welcome to Deploily — the easiest way to deploy your apps using local cloud providers in Algeria.
 
 
-Here you will learn how to get started with our platform.  
-Follow these steps to deploy your first project with ease.
+***🌟 What is Deploily?***
+
+Deploily is a platform that helps developers and startups deploy apps without DevOps skills.
+
+We connect you with local cloud providers, so you can:
+
+Deploy faster
+
+Keep your data in Algeria
+
+Avoid complicated infrastructure setups
+
+Whether you’re building a website, an API, or a full app — Deploily makes it easy.
+
