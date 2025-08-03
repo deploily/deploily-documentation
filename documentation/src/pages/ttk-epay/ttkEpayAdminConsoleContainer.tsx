@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function TtkEpayAdminConsoleContainer() {
     return (
-        <div style={{ marginBottom: 50 }}>
+        <div style={{ marginBottom: 50, paddingInline: 20 }}>
             <p>
                 The TTK ePay Admin Console is a secure and intuitive web dashboard that allows
                 users to manage their payment operations, invoices, and receipts efficiently.

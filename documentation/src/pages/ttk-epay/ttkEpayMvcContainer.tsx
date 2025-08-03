@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TtkEpayMvcContainer() {
     return (
-        <div style={{ marginBottom: 50 }}>
+        <div style={{ marginBottom: 50, paddingInline: 20 }}>
             <p>
                 The MVC integration enables your users to make payments for their invoices
                 directly through your web application's interface.
