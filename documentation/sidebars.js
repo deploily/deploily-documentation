@@ -34,6 +34,15 @@ module.exports = {
           type: 'doc',
           id: 'applications/ttk-epay',
         },
+        {
+          type: 'doc',
+          id: 'applications/odoo',
+        },
+        {
+          type: 'doc',
+          id: 'applications/supabase',
+        },
+        
         
       ],
     },
