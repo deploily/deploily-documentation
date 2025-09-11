@@ -1,0 +1,52 @@
+
+@startuml activity-achats
+title Workflow pour le module Achats 
+scale 200 width
+scale 2000 height
+
+|Gestionnaires des stocks|
+    :Renseigner les **caractéristiques** \n**principales des articles achetés**;
+
+|#AntiqueWhite|Gestionnaire Achats|
+start
+partition Configuration {
+    :Renseigner les **Fournisseurs**;
+    if (Conventions d'achat) then 
+        :Renseigner les types de \n**convetions d'achats**;
+    endif
+}
+
+|Acheteur|
+if (Type d'achat) then (Demande de prix)
+    :Créer une Demande de prix;
+    :Imprimer / Envoyer;
+    :Confirmer (Bon de commande Fournisseur);
+else (Conventions d'achat)
+    :Créer un nouveau \n**contrat d'achat**;
+    :Envoyer des demandes de prix;
+    :Recvoir des offres;
+    if (Offres intéressantes) then (Oui) 
+        :Confirmer le contrat d'achat;
+        :Passer en mode selection des offres;
+        :Confimer les commandes des fournisseurs sélectionnés;
+        :Annuler les devis des fournisseurs non sélectionnés; 
+        :Valider le contrat d'achat;
+    else (Non)
+        :Déclarer la demande d'offres infructueuse;
+        :Revoir le cahier des charges et la \nliste des fournisseurs à consulter;
+        stop
+    endif
+endif
+if (Bons de commandes) then
+    |Gestionnaires des stocks|
+        :Valider les réceptions;
+    |Acheteur|
+        :Créer des factures;
+endif
+
+|#AntiqueWhite|Gestionnaire Achats|
+:Analyse;
+
+end
+
+@enduml
