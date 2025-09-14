@@ -1,9 +1,6 @@
 import React from 'react';
-// Si tu veux gérer les chemins dynamiquement dans Docusaurus
-// import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function TtkEpaySatimEmulatorContainer() {
-    // const imgUrl = useBaseUrl('/img/satim-interface.png'); // si tu utilises useBaseUrl
 
     return (
         <div style={{ marginBottom: 50, paddingInline: 20 }}>
@@ -15,18 +12,11 @@ export default function TtkEpaySatimEmulatorContainer() {
                     It provides safe credentials and a sandbox interface to validate your integration.
                 </p>
 
-                {/* Image de l'interface */}
                 <div style={{ textAlign: 'center', marginTop: 20 }}>
                     <img
                         src="/img/satim-emulator.png" 
                         alt="SATIM Emulator Interface"
-                        style={{
-                            width: '100%',
-                            maxWidth: 800,
-                            border: '1px solid #ddd',
-                            borderRadius: 8,
-                            boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
-                        }}
+                        style={{ borderRadius: 8, marginTop: 12, maxWidth: '100%' }}
                     />
                     <p style={{ fontSize: 14, color: '#555', marginTop: 5 }}>
                         Screenshot of the SATIM Emulator interface for testing payments.
