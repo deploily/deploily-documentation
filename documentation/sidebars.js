@@ -111,6 +111,9 @@ module.exports = {
                 { type: 'doc',
                   id: 'applications/odoo/odoo-add-project-scrum',
                 },
+                { type: 'doc',
+                  id: 'applications/odoo/odoo-elearning',
+                },
           
                 {
                   type: 'doc',
