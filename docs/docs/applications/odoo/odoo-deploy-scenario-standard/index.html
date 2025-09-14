@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-applications/odoo/odoo-deploy-scenario-standard" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Odoo Deploy Scenario Standard | Deploily</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-docusaurus-site.example.com/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://your-docusaurus-site.example.com/img/logo.png"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/docs/applications/odoo/odoo-deploy-scenario-standard"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Odoo Deploy Scenario Standard | Deploily"><meta data-rh="true" name="description" content="Ce document décrit quelques lignes directrices pour un déploiement progressif d&#x27;odoo 13 community dans une petite ou moyenne entreprise/industrie (PME/PMI) standard. Il est structuré sous forme d&#x27;activités d&#x27;apprentissage destinées aux utilisateurs finaux et dédiées à chaque module."><meta data-rh="true" property="og:description" content="Ce document décrit quelques lignes directrices pour un déploiement progressif d&#x27;odoo 13 community dans une petite ou moyenne entreprise/industrie (PME/PMI) standard. Il est structuré sous forme d&#x27;activités d&#x27;apprentissage destinées aux utilisateurs finaux et dédiées à chaque module."><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/docs/applications/odoo/odoo-deploy-scenario-standard"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/applications/odoo/odoo-deploy-scenario-standard" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/applications/odoo/odoo-deploy-scenario-standard" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.c1070d20.css">
+<script src="/assets/js/runtime~main.1c9df809.js" defer="defer"></script>
+<script src="/assets/js/main.e3b9dc71.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo_name.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo_name.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Deploily</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/getting-started">Docs</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/deploily" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/getting-started">Getting Started</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/apis/ors">API Documentation</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/applications/ttk-epay">Application</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/applications/ttk-epay">TTK ePay Application</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/docs/applications/odoo/odoo-deploy-guidlines">Odoo</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/applications/odoo/odoo-deploy-guidlines">Guides de déploiement:</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/docs/applications/odoo/odoo-deploy-scenario-projet">Scénarios de déploiement</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/applications/odoo/odoo-deploy-scenario-projet">Odoo Deploy Scenario projet</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/applications/odoo/odoo-deploy-scenario-standard">Odoo Deploy Scenario Standard</a></li></ul></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/applications/supabase">Supabase</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/applications/nextcloud">Nextcloud Application</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/applications/hi-events">Hi events Application</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Application</span><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Odoo</span><meta itemprop="position" content="2"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Scénarios de déploiement</span><meta itemprop="position" content="3"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Odoo Deploy Scenario Standard</span><meta itemprop="position" content="4"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Scénario de déploiement standard d&#x27;odoo</h1></header>
+<p>Ce document décrit quelques lignes directrices pour un déploiement progressif d&#x27;odoo 13 community dans une petite ou moyenne entreprise/industrie (PME/PMI) <strong>standard</strong>. Il est structuré sous forme d&#x27;activités d&#x27;apprentissage destinées aux utilisateurs finaux et dédiées à chaque module.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prérequis">Prérequis<a href="#prérequis" class="hash-link" aria-label="Direct link to Prérequis" title="Direct link to Prérequis">​</a></h2>
+<ul>
+<li>une installation propre d&#x27;odoo ERP. Pour un deployment avec docker consulter <a href="https://enlight-me.github.io/docker-usecases/setup-images-on-docker/odoo-on-docker.html" target="_blank" rel="noopener noreferrer">setup odoo on docker.</a>.</li>
+<li>préconfiguration et personnalisation d&#x27;odoo selon les spécificités de l&#x27;entreprise, particulièrement la <strong>création des comptes utilisateurs pour chaque apprenant</strong>. Pour plus de détails consulter la section <a href="/docs/applications/odoo/odoo-deploy-guidlines#configuration">configuration</a>.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="sommaire">Sommaire<a href="#sommaire" class="hash-link" aria-label="Direct link to Sommaire" title="Direct link to Sommaire">​</a></h2>
+<ul>
+<li><a href="#hypoth%C3%A8ses">Hypothèses</a></li>
+<li><a href="#module-messages">Module Messages</a></li>
+<li><a href="#module-employ%C3%A9s">Module Employés</a></li>
+<li><a href="#module-stock">Module Stock</a></li>
+<li><a href="#module-facturation">Module Facturation</a></li>
+<li><a href="#module-vente">Module Vente</a></li>
+<li><a href="#module-crm">Module CRM</a></li>
+<li><a href="#module-achats">Module Achats</a></li>
+<li><a href="#module-projet">Module Projet</a></li>
+<li><a href="#module-fabrication">Module Fabrication</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hypothèses">Hypothèses<a href="#hypothèses" class="hash-link" aria-label="Direct link to Hypothèses" title="Direct link to Hypothèses">​</a></h2>
+<ul>
+<li>Petite ou Moyenne Entreprise/Industrie (PME/PMI) de 20 personnes.</li>
+<li>Le déploiement final se feait de manière progressive (par module) avec une durrée d&#x27;absorption d&#x27;au moins <strong>deux (02) semaines</strong>.</li>
+<li>Groupes de 8 à 10 apprenants ayant chacun mis à jour son profil utilisateur.</li>
+<li>Processus métier simples et maturés. Si les processus n&#x27;existent pas il faudra les créer.</li>
+<li>Choix préalable des modules à implémenter.</li>
+<li>Outils de collaboration : tableau blanc, post-it, marqueurs, ...</li>
+<li>Equipe projet composé d&#x27;un chef de projet et de membres ayant une autorité suffisante sur les activités qui seront implémentées (RH, Stocks, Ventes, ...).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-messages">Module Messages<a href="#module-messages" class="hash-link" aria-label="Direct link to Module Messages" title="Direct link to Module Messages">​</a></h2>
+<p>Les activités d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-messages">Module Messages</a> sont :</p>
+<ol>
+<li>lister les départements / fonctions / projets existants dans l&#x27;entreprise et constituer des groupes dont les conversations sont privés selon la liste ci-dessus.</li>
+<li>définir les interactions entre les différents groupes.</li>
+<li>définir des sujets de discussions directes entre deux (02) interloculteurs.</li>
+<li>définir les types d&#x27;informations dont la diffusion est générale à tous les employés.</li>
+</ol>
+<p>Pour chaque activité, créer les cannaux correspondants et produire du contenu (texte, emojis, fichiers attachés, ...).</p>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-employés">Module Employés<a href="#module-employés" class="hash-link" aria-label="Direct link to Module Employés" title="Direct link to Module Employés">​</a></h2>
+<p>Les activités d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-employee">Module Employés</a> sont :</p>
+<ol>
+<li>identifier la hiérarchie des structures existantes dans l&#x27;entreprise et les postes de travail.</li>
+<li>créer les départements.</li>
+<li>créer les postes de travail.</li>
+<li>créer des employés gestionnaires et les associés aux départements.</li>
+<li>créer des employés collaborateurs.</li>
+<li>identifier les parcours (plans) standards des employés dans l&#x27;entreprise et les renseigner.</li>
+<li>lancer des plans sur des employés.</li>
+<li>associés des employés à des comptes utilisateurs et inviter les à se connecter.<!-- -->
+<ol>
+<li>lancer des conversations directes avec ces employés.</li>
+<li>vérifier les informations affichées à ces utilisateurs dans leur annuaire des salariés.</li>
+</ol>
+</li>
+</ol>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-stock">Module Stock<a href="#module-stock" class="hash-link" aria-label="Direct link to Module Stock" title="Direct link to Module Stock">​</a></h2>
+<p>Les activités d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-stock">Module Stock</a> sont :</p>
+<ol>
+<li>identifier <strong>sur papier</strong> tous les articles gérés par l&#x27;entrprise (consommables, services, produits finis), ainsi que leurs emplacements (entrpots, étagères).</li>
+<li>mettre à jour les informations de l&#x27;entrepot de l&#x27;entreprise.</li>
+<li>identifer les types d&#x27;opérations standards dans l&#x27;entreprise et les renseigner.</li>
+<li>identifer les catégories d&#x27;articles gérés par l&#x27;entreprise et les renseigner.</li>
+<li>renseigner les informations relatives à au moins 10 articles gérés par l&#x27;entreprise avec leurs quantités réels.</li>
+<li>définir les règles de réapprovisionnement pour chaque article.</li>
+<li>exécuter quelque opérations manuelles sur les stocks en suivant les mises à jour du tableau de bord <strong><em>Vue d&#x27;ensemble</em></strong> :<!-- -->
+<ol>
+<li>transferts pour chaque type d&#x27;opération (passer par tous les états)</li>
+<li>inventaire en modifiant manuellement les quantités disponibles afin de constater les changements. Passer par tous les états jusqu&#x27;à la validation.</li>
+<li>rebuter quelques articles et vérifier les changements dans les stocks.</li>
+</ol>
+</li>
+<li>exécuter les <strong><em>Analyse</em></strong> et visualiser les résultats sous différentes formes (liste, tableau, graphes).</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exercices-avancés-stock">Exercices avancés stock<a href="#exercices-avancés-stock" class="hash-link" aria-label="Direct link to Exercices avancés stock" title="Direct link to Exercices avancés stock">​</a></h3>
+<p>Activer une à une les options suivantes et constater les améliorations apportés :</p>
+<ol>
+<li>les variantes d&#x27;articles</li>
+<li>les unités de mesures</li>
+<li>le conditionnement des produits</li>
+<li>les emplacements de stockage</li>
+<li>le multi-entrepots</li>
+<li>les routes en plusieurs étapes</li>
+</ol>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-facturation">Module Facturation<a href="#module-facturation" class="hash-link" aria-label="Direct link to Module Facturation" title="Direct link to Module Facturation">​</a></h2>
+<p>Les activités d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-facturation">Module Facturation</a> sont :</p>
+<ol>
+<li>identifier <strong>sur papier</strong> tous les paramètres liés à la facturation utilisés par l&#x27;entrprise, tel que :<!-- -->
+<ul>
+<li>les taxes applicables.</li>
+<li>les termes et conditions de vente.</li>
+<li>les catégories de conditions de paiement (délais, montant global/partiel, ...)</li>
+<li>les journaux comptables.</li>
+<li>les comptes bancaires.</li>
+<li>les intermédaires de paiements.</li>
+<li>les pièces réccurentes (frais bancaires, ..).</li>
+</ul>
+</li>
+<li>en groupe, mettre à jour les paramètres du module avce les données collectés.</li>
+<li>pour les parties factures clients/fournisseurs :<!-- -->
+<ul>
+<li>lister au moin 10 clients/fournisseurs de l&#x27;entreprise et renseigner leurs informations.</li>
+<li>ajouter des <strong>articles</strong> vendus/achetés par l&#x27;entreprise dans la section correspondante (voir module <a href="/docs/applications/odoo/odoo-stock">Stock</a> pour plus de détails)</li>
+<li>créer de nouvelles <strong>factures</strong> pour chaque client/fournisseur, enregister des paiements et marqué les comme comptabilisé.</li>
+<li>créer de nouveaux <strong>avoirs</strong> pour chaque client/fournisseur, enregister des paiements et marqué les comme comptabilisé.</li>
+<li>créer de nouvelles <strong>réceptions</strong> pour chaque client/fournisseur, enregister des paiements et marqué comme comptabilisé.</li>
+<li>créer de nouveaux <strong>paiement</strong> manuels et marqué les comme Validés.</li>
+</ul>
+</li>
+<li>A chaque étape consulter le pannaux <strong>Analyse</strong> pour constater l&#x27;effet des changements opérés.</li>
+</ol>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-vente">Module Vente<a href="#module-vente" class="hash-link" aria-label="Direct link to Module Vente" title="Direct link to Module Vente">​</a></h2>
+<p>Les activités d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-vente">Module Vente</a> sont :</p>
+<ol>
+<li>identifier <strong>sur papier</strong> puis mettre à jours les paramètres suivants :<!-- -->
+<ol>
+<li>caractéristiques principales des articles vendus par l&#x27;entreprise ainsi que les éventuelles variantes.</li>
+<li>Modèle de devis.</li>
+<li>Validité par défaut des devis.</li>
+<li>créer des comptes utilisateurs pour les commerciaux de l&#x27;entreprise, puis intégrer les dans des équipes commerciales.</li>
+</ol>
+</li>
+<li>selon le cas, renseigner au moins 10 articles vendus par l&#x27;entreprise, ainsi que 10 clients.</li>
+<li>constituer des équipes commerciales où chaque participant prend l&#x27;un des roles suivants : gestionnaire des ventes, vendeur, gestionnaire des stocks, gestionnaire de la facturation.</li>
+<li>chaque équipe commerciale, crée au moins 05 devis avec toutes les informations nécessaires y compris des articles optionnels. Imprimer-les et envoyer-les par mail puis Confirmer-les.</li>
+<li>demander au gestionnaire des stocks de valider les livraisons.</li>
+<li>créer des factures pour les bon de commandes.</li>
+<li>demander au gestionnaire des factures de les compatibiliser et d&#x27;enregistrer un paiement.</li>
+<li>visualiser la progression des performances de votre équipe sur le tableau de bord Equipes commerciales.</li>
+<li>constater régulièrement les changement dans la liste des commandes à facturer et sur les graphiques d&#x27;analyse des ventes.</li>
+<li>créer des discussion entre équipes autour des devis et des bons de commandes.</li>
+<li>Changer de role et refaire le même exercice.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exercices-avancés-vente">Exercices avancés Vente<a href="#exercices-avancés-vente" class="hash-link" aria-label="Direct link to Exercices avancés Vente" title="Direct link to Exercices avancés Vente">​</a></h3>
+<p>Activer une à une les options suivantes et constater les améliorations apportés :</p>
+<ol>
+<li>Variantes d&#x27;articles</li>
+<li>Configurateur d&#x27;article.</li>
+<li>Remises.</li>
+<li>Bons et promotions</li>
+<li>Liste de prix.</li>
+</ol>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-crm">Module CRM<a href="#module-crm" class="hash-link" aria-label="Direct link to Module CRM" title="Direct link to Module CRM">​</a></h2>
+<p>Les activités d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-crm">Module CRM</a> sont :</p>
+<ol>
+<li>identifier <strong>sur papier</strong> puis mettre à jours les paramètres suivants :<!-- -->
+<ol>
+<li>Types d&#x27;activtés.</li>
+<li>Etiquettes.</li>
+<li>Motifs de pertes.</li>
+<li>créer des comptes utilisateurs pour les commerciaux de l&#x27;entreprise, puis intégrer les dans des équipes commerciales.</li>
+</ol>
+</li>
+<li>selon le cas, renseigner au moins 10 clients.</li>
+<li>chaque vendeur, crée au moins 10 opportunités avec toutes les informations nécessaires.</li>
+<li>créer des activités à partir des opprtunités.</li>
+<li>créer des réunions à partir des opprtunités.</li>
+<li>créer des devis à partir des opprtunités.</li>
+<li>visualiser la progression des performances de votre équipe sur le Pipelines des équipes.</li>
+<li>constater régulièrement les changement sur les graphiques d&#x27;analyse.</li>
+<li>créer des discussion entre équipes autour des opportunités.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exercices-avancés-crm">Exercices avancés CRM<a href="#exercices-avancés-crm" class="hash-link" aria-label="Direct link to Exercices avancés CRM" title="Direct link to Exercices avancés CRM">​</a></h3>
+<p>Activer l&#x27;option <strong>Pistes</strong> et exécuter les  taches suivantes :</p>
+<ol>
+<li>créer au moin 10 nouvelles pistes.</li>
+<li>convertir les pistes en opportunités avec les différentes options :<!-- -->
+<ol>
+<li>nouveau client.</li>
+<li>client existant.</li>
+<li>fusion avec opprtunité existante.</li>
+</ol>
+</li>
+</ol>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-achats">Module Achats<a href="#module-achats" class="hash-link" aria-label="Direct link to Module Achats" title="Direct link to Module Achats">​</a></h2>
+<p>Les activités d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-achats">Module Achats</a> sont :</p>
+<ol>
+<li>identifier <strong>sur papier</strong> puis mettre à jours les paramètres suivants :<!-- -->
+<ol>
+<li>caractéristiques principales des articles achetés par l&#x27;entreprise.</li>
+</ol>
+</li>
+<li>selon le cas, renseigner au moins 10 articles achetés par l&#x27;entreprise, ainsi que 10 fournisseurs.</li>
+<li>constituer des équipes d&#x27;achats où chaque participant prend l&#x27;un des roles suivants : gestionnaire des achats, acheteur, gestionnaire des stocks.</li>
+<li>chaque équipe d&#x27;achat, crée au moins 05 demandes de prix avec toutes les informations nécessaires. Imprimer-les et envoyer-les par mail puis confirmer-les (bon de commandes fournisseurs).</li>
+<li>demander au gestionnaire des stocks de valider les réceptions.</li>
+<li>visualiser la progression des activités la section Analyse.</li>
+<li>créer des discussion entre équipes autour des demandes de prix et des bons de commandes fournisseurs.</li>
+<li>Changer de role et refaire le même exercice.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exercices-avancés-achats">Exercices avancés Achats<a href="#exercices-avancés-achats" class="hash-link" aria-label="Direct link to Exercices avancés Achats" title="Direct link to Exercices avancés Achats">​</a></h3>
+<p>Avec l&#x27;option <strong><em>Conventions d&#x27;achat</em></strong> activé dans la configuration :</p>
+<ol>
+<li>vérifier et valider les types de convetions d&#x27;achats existants par défaut.</li>
+<li>créer un nouveau type de convention d&#x27;achat.</li>
+<li>créer un nouveau contrat d&#x27;achat.</li>
+<li>envoyer des demandes de prix pour recvoir des offres.</li>
+<li>confirmer le contrat et passer en mode selection des offres.</li>
+<li>confimer les commandes définitives aux fournisseurs selon le mode de passation de contrat choisie.</li>
+</ol>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-projet">Module Projet<a href="#module-projet" class="hash-link" aria-label="Direct link to Module Projet" title="Direct link to Module Projet">​</a></h2>
+<p>Les activités d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-project">Module Projet</a> sont :</p>
+<ol>
+<li>identifier <strong>sur papier</strong> puis mettre à jours les paramètres suivants :<!-- -->
+<ol>
+<li>Types d&#x27;activtés.</li>
+<li>Etiquettes des taches.</li>
+</ol>
+</li>
+<li>créer des employés pour les memebres des équipes projet de l&#x27;entreprise.</li>
+<li>selon le cas, renseigner au moins 05 clients.</li>
+<li>créer au moins 02 projets et renseigner les informations y relatives.</li>
+<li>ajouter des pièces jointes de différents formats aux projets.</li>
+<li>dans la partie <strong>Projets</strong> sélection un des projets :<!-- -->
+<ol>
+<li>ajouter des colonnes (TODO, WIP, DONE).</li>
+<li>paramétrer chaque colone.</li>
+</ol>
+</li>
+<li>ajouter des taches dans chaque étape du projets.</li>
+<li>faite glisser les taches entre les différentes étapes et constater les changments dans la partie analyse.</li>
+<li>editer les taches et renseigner les informations y relatives.</li>
+<li>modifier l&#x27;état des taches et constater le indicateurs couleurs sur le kanban projet et dans la partie <strong>Toutes les taches</strong>.</li>
+</ol>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-fabrication">Module Fabrication<a href="#module-fabrication" class="hash-link" aria-label="Direct link to Module Fabrication" title="Direct link to Module Fabrication">​</a></h2>
+<p>Les activités d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-fabrication">Module Fabrication</a> sont :</p>
+<ol>
+<li>identifier <strong>sur papier</strong> puis mettre à jours les paramètres suivants :<!-- -->
+<ol>
+<li>Postes de travail / charge.</li>
+<li>Enchainement des taches de fabrication.</li>
+<li>Composition des différents articles (au moins 03).</li>
+</ol>
+</li>
+<li>activer l&#x27;option <strong><em>Ordres de travail</em></strong> dans la confiuration.</li>
+<li>renseigner les postes de travail et les gammes de produits.</li>
+<li>renseigner au moins 03 articles fabriqués par l&#x27;entreprise.</li>
+<li>associer les articles crées à leur nomenclatures et gammes.</li>
+<li>créer un ordre de fabrication et renseigner les informations utiles (article, quantité, ...).</li>
+<li>marquer l&#x27;ordre de fabrication <strong>à faire</strong> puis passer le au stade <strong><em>Confirmé</em></strong> et <strong><em>Planifié</em></strong>.</li>
+<li>constater les ordres de travail crées automatiquement.</li>
+<li>faite passer les ordres de travail un à un par les stades <strong><em>planifié</em></strong> puis <strong><em>fait</em></strong> et constater les changements dans le tabelau de bord fabrication.</li>
+<li>revenir à l&#x27;ordre de fabrication et marqué comme <strong><em>fait</em></strong>.</li>
+<li>constater le changement opérés au niveau du stock de l&#x27;article produit et de ses composants.</li>
+<li>effectuer quelques analyses pour vous familiariser avec cette section.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exercices-avancés-module-fabrication">Exercices avancés module fabrication<a href="#exercices-avancés-module-fabrication" class="hash-link" aria-label="Direct link to Exercices avancés module fabrication" title="Direct link to Exercices avancés module fabrication">​</a></h3>
+<ol>
+<li>exécuter une commande de deconstruction sur l&#x27;un des produits choisis et constater le changement opérés au niveau du stock de l&#x27;article produit et de ses composants.</li>
+<li>exécuter une opération de mise en rebut et constater le changement opérés au niveau du stock de l&#x27;article produit et de ses composants.</li>
+</ol>
+<hr>
+<p>🔗 <strong>Official Resource</strong>: <a href="https://www.odoo.com/documentation" target="_blank" rel="noopener noreferrer">Odoo Documentation</a></p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/applications/odoo/odoo-deploy-scenario-projet"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Odoo Deploy Scenario projet</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/applications/supabase"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Supabase</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#prérequis" class="table-of-contents__link toc-highlight">Prérequis</a></li><li><a href="#sommaire" class="table-of-contents__link toc-highlight">Sommaire</a></li><li><a href="#hypothèses" class="table-of-contents__link toc-highlight">Hypothèses</a></li><li><a href="#module-messages" class="table-of-contents__link toc-highlight">Module Messages</a></li><li><a href="#module-employés" class="table-of-contents__link toc-highlight">Module Employés</a></li><li><a href="#module-stock" class="table-of-contents__link toc-highlight">Module Stock</a><ul><li><a href="#exercices-avancés-stock" class="table-of-contents__link toc-highlight">Exercices avancés stock</a></li></ul></li><li><a href="#module-facturation" class="table-of-contents__link toc-highlight">Module Facturation</a></li><li><a href="#module-vente" class="table-of-contents__link toc-highlight">Module Vente</a><ul><li><a href="#exercices-avancés-vente" class="table-of-contents__link toc-highlight">Exercices avancés Vente</a></li></ul></li><li><a href="#module-crm" class="table-of-contents__link toc-highlight">Module CRM</a><ul><li><a href="#exercices-avancés-crm" class="table-of-contents__link toc-highlight">Exercices avancés CRM</a></li></ul></li><li><a href="#module-achats" class="table-of-contents__link toc-highlight">Module Achats</a><ul><li><a href="#exercices-avancés-achats" class="table-of-contents__link toc-highlight">Exercices avancés Achats</a></li></ul></li><li><a href="#module-projet" class="table-of-contents__link toc-highlight">Module Projet</a></li><li><a href="#module-fabrication" class="table-of-contents__link toc-highlight">Module Fabrication</a><ul><li><a href="#exercices-avancés-module-fabrication" class="table-of-contents__link toc-highlight">Exercices avancés module fabrication</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/getting-started">Getting Started</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://deploily.cloud" target="_blank" rel="noopener noreferrer" class="footer__link-item">Deploily Cloud<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/deploily" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.facebook.com/deploily" target="_blank" rel="noopener noreferrer" class="footer__link-item">Facebook<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.linkedin.com/showcase/deploily" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://transformatek.dz" target="_blank" rel="noopener noreferrer" class="footer__link-item">Transformatek<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="margin-bottom--sm"><a class="footerLogoLink_BH7S" href="/"><img src="/img/logo_name_white.png" alt="Company Logo" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo_name_white.png" alt="Company Logo" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU"></a></div><div class="footer__copyright">Copyright © 2025 Transformatek.</div></div></div></footer></div>
+</body>
+</html>

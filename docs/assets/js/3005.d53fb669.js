@@ -1,0 +1,1 @@
+(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[3005],{42634:()=>{},60094:(e,i,s)=>{"use strict";s.r(i),s.d(i,{default:()=>t});s(96540),s(91421);var n=s(51668),r=s(74848);const t=function({apiDescriptionUrl:e}){return n.nC?(0,r.jsx)("div",{children:(0,r.jsx)(n.nC,{apiDescriptionUrl:e,router:"hash"})}):(0,r.jsx)("p",{children:"Loading..."})}},81028:()=>{}}]);

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-applications/odoo/odoo-deploy-scenario-projet" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Odoo Deploy Scenario projet | Deploily</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-docusaurus-site.example.com/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://your-docusaurus-site.example.com/img/logo.png"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/docs/applications/odoo/odoo-deploy-scenario-projet"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Odoo Deploy Scenario projet | Deploily"><meta data-rh="true" name="description" content="Ce document décrit quelques lignes directrices pour un déploiement progressif d&#x27;odoo 13 community dans une petite ou moyenne entreprise/industrie (PME/PMI) dont la gestion est orientée Projets."><meta data-rh="true" property="og:description" content="Ce document décrit quelques lignes directrices pour un déploiement progressif d&#x27;odoo 13 community dans une petite ou moyenne entreprise/industrie (PME/PMI) dont la gestion est orientée Projets."><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/docs/applications/odoo/odoo-deploy-scenario-projet"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/applications/odoo/odoo-deploy-scenario-projet" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/applications/odoo/odoo-deploy-scenario-projet" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.c1070d20.css">
+<script src="/assets/js/runtime~main.1c9df809.js" defer="defer"></script>
+<script src="/assets/js/main.e3b9dc71.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo_name.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo_name.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Deploily</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/getting-started">Docs</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/deploily" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/getting-started">Getting Started</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/apis/ors">API Documentation</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/applications/ttk-epay">Application</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/applications/ttk-epay">TTK ePay Application</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/docs/applications/odoo/odoo-deploy-guidlines">Odoo</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/applications/odoo/odoo-deploy-guidlines">Guides de déploiement:</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/docs/applications/odoo/odoo-deploy-scenario-projet">Scénarios de déploiement</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/applications/odoo/odoo-deploy-scenario-projet">Odoo Deploy Scenario projet</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/applications/odoo/odoo-deploy-scenario-standard">Odoo Deploy Scenario Standard</a></li></ul></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/applications/supabase">Supabase</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/applications/nextcloud">Nextcloud Application</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/applications/hi-events">Hi events Application</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Application</span><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Odoo</span><meta itemprop="position" content="2"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Scénarios de déploiement</span><meta itemprop="position" content="3"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Odoo Deploy Scenario projet</span><meta itemprop="position" content="4"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Scénario de déploiement pour une gestion par projet</h1></header>
+<p>Ce document décrit quelques lignes directrices pour un déploiement progressif d&#x27;odoo 13 community dans une petite ou moyenne entreprise/industrie (PME/PMI) dont la gestion est <strong>orientée Projets</strong>.</p>
+<p>Il est structuré sous forme d&#x27;activités d&#x27;apprentissage destinées aux utilisateurs finaux et dédiées à chaque module.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prérequis">Prérequis<a href="#prérequis" class="hash-link" aria-label="Direct link to Prérequis" title="Direct link to Prérequis">​</a></h2>
+<ul>
+<li>une installation propre d&#x27;odoo ERP. Pour un deployment avec docker consulter <a href="https://enlight-me.github.io/docker-usecases/setup-images-on-docker/odoo-on-docker.html" target="_blank" rel="noopener noreferrer">setup odoo on docker.</a></li>
+<li>préconfiguration et personnalisation d&#x27;odoo selon les spécificités de l&#x27;entreprise, particulièrement la <strong>création des comptes utilisateurs pour chaque apprenant</strong>. Pour plus de détails consulter la section <a href="/docs/applications/odoo/odoo-deploy-guidlines#configuration">configuration</a>.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="sommaire">Sommaire<a href="#sommaire" class="hash-link" aria-label="Direct link to Sommaire" title="Direct link to Sommaire">​</a></h2>
+<ul>
+<li><a href="#hypoth%C3%A8ses">Hypothèses</a></li>
+<li><a href="#module-messages">Module Messages</a></li>
+<li><a href="#module-employ%C3%A9s">Module Employés</a></li>
+<li><a href="#module-vente">Module Vente</a></li>
+<li><a href="#module-projet-">Module Projet - activités de base</a></li>
+<li><a href="#module-projet-activit%C3%A9s-avanc%C3%A9es">Module Projet - activités avancés</a></li>
+<li><a href="#modules-additionnels">Modules additionnels</a></li>
+<li><a href="#module-scrum">Module Additionnel Scrum</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hypothèses">Hypothèses<a href="#hypothèses" class="hash-link" aria-label="Direct link to Hypothèses" title="Direct link to Hypothèses">​</a></h2>
+<ul>
+<li>Petite ou Moyenne Entreprise/Industrie (PME/PMI) de 20 personnes.</li>
+<li>Le déploiement final se feait de manière progressive (par module) avec une durrée d&#x27;absorption d&#x27;au moins <strong>deux (02) semaines</strong>.</li>
+<li>Groupes de 8 à 10 apprenants ayant chacun mis à jour son profil utilisateur.</li>
+<li>Processus métier simples et maturés. Si les processus n&#x27;existent pas il faudra les crées.</li>
+<li>Outils de collaboration : tableau blanc, post-it, marqueurs, ...</li>
+<li>Equipe projet composé d&#x27;un chef de projet et de membres ayant une autorité suffisante sur les activités qui seront implémentées.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-messages">Module Messages<a href="#module-messages" class="hash-link" aria-label="Direct link to Module Messages" title="Direct link to Module Messages">​</a></h2>
+<p>Les activités d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-messages">Module Messages</a> sont :</p>
+<ol>
+<li>lister les départements / fonctions / projets existants dans l&#x27;entreprise et constituer des groupes dont les conversations sont privés selon la liste ci-dessus.</li>
+<li>définir les interactions entre les différents groupes.</li>
+<li>définir des sujets de discussions directes entre deux (02) interloculteurs.</li>
+<li>définir les types d&#x27;informations dont la diffusion est générale à tous les employés.</li>
+</ol>
+<p>Pour chaque activité, créer les cannaux correspondants et produire du contenu (texte, emojis, fichiers attachés, ...).</p>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-employés">Module Employés<a href="#module-employés" class="hash-link" aria-label="Direct link to Module Employés" title="Direct link to Module Employés">​</a></h2>
+<p>Les activités d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-employee">Module Employés</a> sont :</p>
+<ol>
+<li>identifier la hiérarchie des structures existantes dans l&#x27;entreprise et les postes de travail.</li>
+<li>créer les départements.</li>
+<li>créer les postes de travail.</li>
+<li>créer des employés gestionnaires et les associés aux départements.</li>
+<li>créer des employés collaborateurs.</li>
+<li>associés des employés à des comptes utilisateurs et inviter les à se connecter.</li>
+</ol>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-vente">Module Vente<a href="#module-vente" class="hash-link" aria-label="Direct link to Module Vente" title="Direct link to Module Vente">​</a></h2>
+<p>Les activités d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-vente">Module Vente</a> sont :</p>
+<ol>
+<li>identifier <strong>sur papier</strong> puis mettre à jours les paramètres suivants :<!-- -->
+<ol>
+<li>caractéristiques principales des articles vendus par l&#x27;entreprise ainsi que les éventuelles variantes.</li>
+<li>créer des comptes utilisateurs pour les commerciaux de l&#x27;entreprise, puis intégrer les dans des équipes commerciales.</li>
+</ol>
+</li>
+<li>selon le cas, renseigner au moins 10 <strong>articles</strong> vendus par l&#x27;entreprise, ainsi que 10 <strong>clients</strong>.</li>
+<li>créer au moins 05 <strong>devis</strong> avec toutes les informations nécessaires y compris des articles optionnels. Imprimer-les et envoyer-les par mail puis Confirmer-les.</li>
+<li>créer des <strong>factures</strong> pour les bon de commandes.</li>
+</ol>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-projet---activités-de-base">Module Projet - activités de base<a href="#module-projet---activités-de-base" class="hash-link" aria-label="Direct link to Module Projet - activités de base" title="Direct link to Module Projet - activités de base">​</a></h2>
+<p>Les activités de base d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-project">Module Projet</a> sont :</p>
+<ol>
+<li>identifier <strong>sur papier</strong> puis mettre à jours les paramètres suivants :<!-- -->
+<ol>
+<li>Types d&#x27;activités.</li>
+<li>Etiquettes des taches.</li>
+</ol>
+</li>
+<li>si nécessaire, créer des employés pour les membres des équipes projets de l&#x27;entreprise et leur associés des utilisateurs.</li>
+<li>si nécessaire, renseigner au moins 05 clients.</li>
+<li>créer au moins 02 projets et renseigner les informations y relatives.</li>
+<li>ajouter des pièces jointes de différents formats aux projets.</li>
+<li>dans la partie <strong>Projets</strong> sélection un des projets :<!-- -->
+<ol>
+<li>ajouter des colonnes (TODO, WIP, DONE).</li>
+<li>paramétrer chaque colone.</li>
+</ol>
+</li>
+<li>ajouter des tâches dans chaque étape du projets.</li>
+<li>editer les tâches et renseigner les informations y relatives.</li>
+<li>faite glisser les taches entre les différentes étapes et constater les changments dans la partie analyse.</li>
+<li>modifier l&#x27;état des tâches et constater le indicateurs couleurs sur le kanban projet et dans la partie <strong>Toutes les taches</strong>.</li>
+</ol>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-projet---activités-avancées">Module projet - activités avancées<a href="#module-projet---activités-avancées" class="hash-link" aria-label="Direct link to Module projet - activités avancées" title="Direct link to Module projet - activités avancées">​</a></h2>
+<p>Les activités d&#x27;apprentissage avancées de ce module sont :</p>
+<ol>
+<li>
+<p>identifier <strong>sur papier</strong> les éléments suivants :</p>
+<ol>
+<li>projets en cours au niveau de l&#x27;entreprise.</li>
+<li>tâches relatives à chaque projet.</li>
+<li>sous-taches des taches listées ci-avant.</li>
+</ol>
+</li>
+<li>
+<p>avec l&#x27;option <strong><em>Utiliser les évaluations de projet</em></strong> activé dans la configuration :</p>
+<ol>
+<li><strong>cette option nécessite des informations client fiables, ainsi que la configuration d&#x27;un serveur de messagerie et/ou l&#x27;accès client au portail de l&#x27;entreprise</strong>.</li>
+<li>pour l&#x27;un des projets identifiés, définir un <strong><em>Modèle d&#x27;email pour les évaluations</em></strong> pour chaque étape.</li>
+<li>le client recevra un email de demande d&#x27;evaluation chaque fois q&#x27;une tâche progresse dans le pipeline et les feedbacks seront visibles directement dans la vue kanban du projets avec chaque tâche.</li>
+</ol>
+</li>
+<li>
+<p>avec l&#x27;option <strong><em>Sous-tâches</em></strong> activé dans la configuration :</p>
+<ol>
+<li>renseigner les informations relatives à un des projets identifiés.</li>
+<li>renseigner les tâches du projet.</li>
+<li>créer les sous-tâches en les reliants à leurs taches parentes.</li>
+<li>assigner les taches/sous-tâches à des membres de l&#x27;équipe.</li>
+<li>chaque membre constate la liste des tâches qui lui sont assignés et les fait progrésser dans le pipeline.</li>
+<li>refaire l&#x27;opération pour les autres projets identifiés.</li>
+<li>créer une hiérarchie de projets en les reliants avec le champ <strong><em>Sous-tache du projet</em></strong>.</li>
+</ol>
+</li>
+<li>
+<p>avec l&#x27;option <strong><em>Feuilles de temps sur les tâches</em></strong> activé dans la configuration.</p>
+<ol>
+<li>pour l&#x27;un des projets identifiés, activé l&#x27;option <strong><em>Feuilles de temps</em></strong>.</li>
+<li>créer un nouveau modèle de <strong>Temps de travail</strong> adapté à la législation locale (Heures de travail, Congé Global).</li>
+<li>renseigner le <strong><em>Coût de la feuille de temps</em></strong> pour chaque membre de l&#x27;équipe (module employés).</li>
+<li>pour chaque tâche du projet selectionnée, renseigner le champ <strong><em>Heures planifiées</em></strong>.</li>
+<li>les membres d&#x27;équipes peuvent maintenant renseigner leurs apports en volume horaire à chaque tâche et visualiser les heures restantes dans la vue kanban du projet.</li>
+<li>visualiser les changements dans la partie analyse après chaque modification sur les horaires travailés par employé / par tache / par projet.</li>
+<li>dans le module <strong><em>Feuilles de temps</em></strong> :<!-- -->
+<ol>
+<li>chaque membre de l&#x27;équipe visulise ses feuilles de temps.</li>
+<li>visualiser la liste de toutes les feuilles de temps.</li>
+<li>faite des analyses par employé / par tache / par projet.</li>
+<li>changer l&#x27;option <strong><em>Unité d&#x27;encodage</em></strong> dans la configuration et visualiser les modifications apportées aux informations projets / taches / feuilles de temps du module Projet.</li>
+</ol>
+</li>
+<li>refaire l&#x27;opération pour les autres projets identifiés.</li>
+</ol>
+</li>
+</ol>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="intégration-modules-projet-avec-vente">Intégration modules Projet avec Vente<a href="#intégration-modules-projet-avec-vente" class="hash-link" aria-label="Direct link to Intégration modules Projet avec Vente" title="Direct link to Intégration modules Projet avec Vente">​</a></h2>
+<p><strong>NB :</strong> Il est primordiale de créer des lignes de ventes (artciles de type service) indépendantes des aspects techniques, et de gérer ces derniers (aspects techniques) comme des tâches dans le projet.</p>
+<p><strong>Workflow 1 : Bon de Commandes à partir d&#x27;un projet</strong></p>
+<ol>
+<li>dans le module <strong>Vente</strong> créer des articles de type service et configurer la <strong><em>Politique de facturation du service</em></strong> sur <strong><em>Feuilles de temps sur les tâches</em></strong>. et <strong><em>Suivi du service</em></strong> sur <strong><em>Ne pas créer la tâche</em></strong>.</li>
+<li>pour l&#x27;un des projets identifiés, activé l&#x27;option <strong><em>Feuilles de temps</em></strong>.</li>
+<li>lancer la commande <strong><em>Créer un bon de commande</em></strong>.</li>
+<li>si le type de facturation est définie sur <strong><em>Au taux du projet</em></strong>.<!-- -->
+<ol>
+<li>selectionner un des artciles de type service.</li>
+<li>un bon de commande est crée avec comme référence le projet en cours.</li>
+<li>on constate qu&#x27;une seule <strong>ligne de commande</strong> est ajoutée, celle du service séléctionné.</li>
+</ol>
+</li>
+<li>si le type de facturation est définie sur <strong><em>Au taux de l&#x27;employé</em></strong>.<!-- -->
+<ol>
+<li>ajouter des lignes employé / service.</li>
+<li>un employé ne peut être séléctionner qu&#x27;une seule fois, çad qu&#x27;il ne peut contribuer qu&#x27;à un seul service.</li>
+<li>un bon de commande est crée avec comme référence le projet en cours.</li>
+<li>on constate que plusieurs <strong>lignes de commande</strong> sont ajoutées, chacune pour correspondant à un des services séléctionnés.</li>
+</ol>
+</li>
+<li>retour dans le module projet.</li>
+<li>sélectionner quelques tâches du projet en cours et ajouter des <strong><em>feuilles de temps</em></strong>, pour faire progrésser le taux d&#x27;avancement.</li>
+<li>dans les paramètres du projet en cours, onglet <strong><em>Facturation</em></strong>,  sélectionner le lien du <strong><em>Bon de commande</em></strong> correspondant.</li>
+<li>les heures (feuilles de temps) réalisées dans le projet sont automatiquement renseigné dans la colonne Livré.</li>
+<li>lancer la commande <strong><em>Créer une facture</em></strong>, sélectionner <strong><em>Facture normale</em></strong>.</li>
+<li>une nouvelle facture est crée pour le projet / bon de commande.</li>
+<li>revenir aux paramètres du <strong>Bon de commande</strong>. on constate que la quanitié facturée est mise à jour.</li>
+<li>si on vérifie les feuilles de temps enregistrées dans la <strong>Tâches</strong>, on constate qu&#x27;elles sont grisées et impossible à modifier puisqu&#x27;elles ont déjà été facturées.</li>
+<li>revenir aux paramètres du <strong>Bon de commande</strong> du projet. lancer la commande <strong><em>Vue d&#x27;ensemble du projet</em></strong>, on obtient un rapport détaillant les Heures encodées, la Profitabilité, les feuilles de temps par employé, ...</li>
+<li>aussi, dans la page des paramètres du <strong>Bon de commande</strong> du projet, lancer la commande <strong><em>Aperçu client</em></strong>, on obtient un rapport mise en forme tel qu&#x27;il sera visible par le client.</li>
+<li>pour facturer de nouveau, il faute faire progrésser le projet en renseignant de nouvelles lignes de feuilles de temps dans les paramètres des Tâches. ainsi, à chaque jalon du projet, une facture particulière peut être générée.</li>
+<li>pour associer plusieurs tâches techniques à une même <strong>ligne de vente</strong> (cas général), créer une nouvelle tache dans le projet. dans l&#x27;onglet <strong><em>infos supplémentaires</em></strong> de la tâche sélectionner la <strong>Ligne de vente</strong> désirée. ajouter des <strong>feuilles de temps</strong> à cette tâche.</li>
+<li>revenir aux paramètres du <strong>Bon de commande</strong>. on constate que la quantité livrée est automatiquement mise à jours comme étant la somme des heurs réalisées sur l&#x27;ensemble des tâches liées à la <strong>ligne de vente</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/activity-projets-bc-a-partir-projet-3d1770988cb11993bafc568d36f4258f.png" width="1271" height="2023" class="img_ev3q"></p>
+<p><strong>Workflow 2 : Service (article) spécifique à un seul Projet</strong></p>
+<ol>
+<li>pour l&#x27;un des projets identifiés, activé l&#x27;option <strong><em>Feuilles de temps</em></strong>.</li>
+<li>dans le module <strong>Vente</strong> créer des articles de type service et configurer la <strong><em>Politique de facturation du service</em></strong> sur <strong><em>Feuilles de temps sur les tâches</em></strong>. et <strong><em>Suivi du service</em></strong> sur <strong><em>Créer une tâche dans un projet existant</em></strong>.</li>
+<li>créer un nouveau <strong>Devis</strong> et insérer l&#x27;article configuré précédement. on constate que le devis est automatiquement lié au projet référencé dans les paramètres de l&#x27;article (service).</li>
+<li>confirmer le <strong>Devis</strong> pour le transformer en <strong>Bon de commande</strong>.</li>
+<li>dans le module projet, on constate qu&#x27;une nouvelle tache est automatiquement ajoutée au projet en cours et la ligne de vente fait référence au bon de commande crée.</li>
+<li>la facturation est effectuée de la même manière que dans le workflow précédent (ajout de feuilles de temps dans les tâches -&gt; création d&#x27;une facture -&gt; aprçu).</li>
+<li>pour associer plusieurs tâches techniques à cette <strong>ligne de vente</strong>, créer une nouvelle tache dans le projet. dans l&#x27;onglet <strong><em>infos supplémentaires</em></strong> de la tâche, définir la tâche <strong>parent</strong> sur la tâche liée à la <strong>ligne de vente</strong>. on constate que la ligne de vente de la sous-tâche est automatiquement définie sur la ligne de vente de la tache parente. ajouter des <strong>feuilles de temps</strong> à cette sous-tâche.</li>
+<li>revenir aux paramètres du <strong>Bon de commande</strong>. on constate que la quantité livrée est automatiquement mise à jours comme étant la somme des heurs réalisées sur l&#x27;ensemble des tâches liées à la <strong>ligne de vente</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/activity-projets-service-specifique-a-1-projet-66ab06f97945d8bc47cafab8fd7a4edf.png" width="1241" height="2027" class="img_ev3q"></p>
+<p><strong>Workflow 3 : Projet à partir d&#x27;un ou plusieurs Bon de commande</strong></p>
+<ol>
+<li>dans le module <strong>Vente</strong> créer des articles de type service et configurer la <strong><em>Politique de facturation du service</em></strong> sur <strong><em>Feuilles de temps sur les tâches</em></strong>. et <strong><em>Suivi du service</em></strong> sur <strong><em>Créer une tâche dans un projet de bon de commande</em></strong>.</li>
+<li>créer un nouveau <strong>Devis</strong> et insérer l&#x27;article configuré précédement. dans l&#x27;onglet <strong><em>Autres informations</em></strong>, sélectionner le projet souhaité. <strong><em>Confirmer</em></strong> le <strong>Devis</strong> (transformer en <strong>Bon de commande</strong>).</li>
+<li>si dans l&#x27;étape précédente le projet est laissé vide, un nouveau projet avec la référence du Bon de commande sera crée (<strong>situation indésirable</strong>).</li>
+<li>dans le module projet, on constate qu&#x27;une nouvelle tache est automatiquement ajoutée au projet en cours et la ligne de vente fait référence au bon de commande crée.</li>
+<li>la facturation est effectuée de la même manière que dans les workflows précédents (ajout de tâches/sous-tâches techniques -&gt; ajout de feuilles de temps -&gt; création d&#x27;une facture -&gt; aprçu).</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/activity-projets-a-partir-1-plusieurs-bc-cfd0bd44142132b8e0ee69f33230ce1a.png" width="2621" height="2056" class="img_ev3q"></p>
+<p><strong>Workflow 4 : Service (article) non lié automatiquement à une seule tâche</strong></p>
+<ol>
+<li>dans le module <strong>Vente</strong> créer des articles de type service et configurer la <strong><em>Politique de facturation du service</em></strong> sur <strong><em>Feuilles de temps sur les tâches</em></strong>. et <strong><em>Suivi du service</em></strong> sur <strong><em>Créer un nouveau projet sans tâche</em></strong> (çad Devis).</li>
+<li>créer un nouveau <strong>Devis</strong> et insérer l&#x27;article configuré précédement. <strong><em>Confirmer</em></strong> le <strong>Devis</strong> (transformer en <strong>Bon de commande</strong>).</li>
+<li>un nouveau projet avec la référence du <strong>Bon de commande</strong> sera crée sans aucune tâche.</li>
+<li>toutes les nouvelles tâches créer dans ce projet seront par défaut liées à la ligne de vente définie lors de la création du bon de commande. bien sûre le gestionnaire de projet peut les <strong>lignes de ventes</strong> à tout moment.</li>
+<li>la facturation est effectuée de la même manière que dans les workflows précédents (ajout de tâches/sous-tâches techniques -&gt; ajout de feuilles de temps -&gt; création d&#x27;une facture -&gt; aprçu).</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/activity-projets-service-non-lie-a-1-tache-2a1cf7be521177371b638cfe96234e6c.png" width="2373" height="2067" class="img_ev3q"></p>
+<p><strong>Workflow X : Devis et Projets crées séparément</strong></p>
+<ol>
+<li>dans le module <strong>Vente</strong> créer des articles de type service et configurer la <strong><em>Politique de facturation du service</em></strong> sur <strong><em>Feuilles de temps sur les tâches</em></strong>. et <strong><em>Suivi du service</em></strong> sur <strong><em>Ne pas créer la tâche</em></strong>.</li>
+<li>créer un nouveau <strong>Devis</strong> et insérer le sevice (article) configuré précédement.</li>
+<li>confirmer le <strong>Devis</strong> pour le transformer en <strong>Bon de commande</strong>.</li>
+<li>dans le module projet, crée un nouveau projet ou sélectionner un projet existant. s&#x27;assurer que l&#x27;option <strong><em>Feuilles de temps</em></strong> est activé.</li>
+<li>créer une nouvelle tâche. dans l&#x27;onglet <strong>Info supplémentaires</strong> séléctionner la société pour laquelle le Devis a été crée.</li>
+<li>un nouveau champ <strong>Ligne de vente</strong> apparait. séléctionner le service (article) précédement définit.</li>
+<li>la facturation est effectuée de la même manière que dans les workflows précédents (ajout de tâches/sous-tâches techniques -&gt; ajout de feuilles de temps -&gt; création d&#x27;une facture -&gt; aprçu).</li>
+<li>maintenant vous pouver ajouter autant de services au bon de commande et y lier autant de tâches que nécessaires :).</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/assets/images/activity-projets-devis-projets-crees-separement-9d4bd03d2625c064a1aeab4c74d5b81c.png" width="1855" height="2044" class="img_ev3q"></p>
+<p><a href="#sommaire">Retour au sommaire</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-additionnel-scrum">Module Additionnel Scrum<a href="#module-additionnel-scrum" class="hash-link" aria-label="Direct link to Module Additionnel Scrum" title="Direct link to Module Additionnel Scrum">​</a></h2>
+<p>Les activités de base d&#x27;apprentissage du <a href="/docs/applications/odoo/odoo-add-project-scrum">Module Projet Scrum</a> sont :</p>
+<ol>
+<li>identifier <strong>sur papier</strong> puis mettre à jours les paramètres suivants :<!-- -->
+<ol>
+<li>Les projets gérés par la méthode Scrum.</li>
+<li>Les périodes durant lesquelles les <strong>Sprints</strong> sont exécutés et les éventuelles périodes <strong>Breath</strong>.</li>
+<li>Les Equipes Scrum impliquées.</li>
+</ol>
+</li>
+<li>créer un nouevau projet et lui associer un équipe Scrum.</li>
+<li>créer des tâches dans le projet et associées les aux sprints.</li>
+</ol>
+<hr>
+<p>🔗 <strong>Official Resource</strong>: <a href="https://www.odoo.com/documentation" target="_blank" rel="noopener noreferrer">Odoo Documentation</a></p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/applications/odoo/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Odoo</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/applications/odoo/odoo-deploy-scenario-standard"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Odoo Deploy Scenario Standard</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#prérequis" class="table-of-contents__link toc-highlight">Prérequis</a></li><li><a href="#sommaire" class="table-of-contents__link toc-highlight">Sommaire</a></li><li><a href="#hypothèses" class="table-of-contents__link toc-highlight">Hypothèses</a></li><li><a href="#module-messages" class="table-of-contents__link toc-highlight">Module Messages</a></li><li><a href="#module-employés" class="table-of-contents__link toc-highlight">Module Employés</a></li><li><a href="#module-vente" class="table-of-contents__link toc-highlight">Module Vente</a></li><li><a href="#module-projet---activités-de-base" class="table-of-contents__link toc-highlight">Module Projet - activités de base</a></li><li><a href="#module-projet---activités-avancées" class="table-of-contents__link toc-highlight">Module projet - activités avancées</a></li><li><a href="#intégration-modules-projet-avec-vente" class="table-of-contents__link toc-highlight">Intégration modules Projet avec Vente</a></li><li><a href="#module-additionnel-scrum" class="table-of-contents__link toc-highlight">Module Additionnel Scrum</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/getting-started">Getting Started</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://deploily.cloud" target="_blank" rel="noopener noreferrer" class="footer__link-item">Deploily Cloud<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/deploily" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.facebook.com/deploily" target="_blank" rel="noopener noreferrer" class="footer__link-item">Facebook<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.linkedin.com/showcase/deploily" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://transformatek.dz" target="_blank" rel="noopener noreferrer" class="footer__link-item">Transformatek<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="margin-bottom--sm"><a class="footerLogoLink_BH7S" href="/"><img src="/img/logo_name_white.png" alt="Company Logo" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo_name_white.png" alt="Company Logo" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU"></a></div><div class="footer__copyright">Copyright © 2025 Transformatek.</div></div></div></footer></div>
+</body>
+</html>
