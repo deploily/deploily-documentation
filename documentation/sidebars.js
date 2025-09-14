@@ -42,6 +42,13 @@ module.exports = {
           type: 'doc',
           id: 'applications/supabase',
         },
+        {
+          type: 'doc',
+          id: 'applications/nextcloud',
+        },{
+          type: 'doc',
+          id: 'applications/hi-events',
+        },
         
         
       ],
