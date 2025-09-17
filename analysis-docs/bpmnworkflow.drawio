@@ -1,0 +1,784 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" modified="2025-09-17T15:48:30.106Z" etag="LrwflwBtOLRwFj6FCmkf" version="23.1.5" type="device" pages="3">
+  <diagram id="ue7826Uiw08qI2RY-Nqi" name="TTK-Epay-ecosystem">
+    <mxGraphModel dx="1511" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-39" value="&lt;br&gt;TTK-Epay" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="270" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-40" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=halfCircle;endFill=0;endSize=6;strokeWidth=1;sketch=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" target="GS-R7QYty6EEZjOTe-C8-42" parent="1" source="GS-R7QYty6EEZjOTe-C8-50">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-41" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;sketch=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;endSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" target="GS-R7QYty6EEZjOTe-C8-42" parent="1" source="GS-R7QYty6EEZjOTe-C8-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="425" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-49" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;API&lt;br&gt;Payement&lt;br&gt;Admin&lt;/font&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GS-R7QYty6EEZjOTe-C8-41">
+          <mxGeometry x="-0.4133" y="2" relative="1" as="geometry">
+            <mxPoint x="3" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-42" value="" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;fillColor=none;strokeColor=none;resizable=0;perimeter=centerPerimeter;rotatable=0;allowArrows=0;points=[];outlineConnect=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="445" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-44" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=halfCircle;endFill=0;endSize=6;strokeWidth=1;sketch=0;" edge="1" target="GS-R7QYty6EEZjOTe-C8-47" parent="1" source="GS-R7QYty6EEZjOTe-C8-55">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="220" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-85" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Invoice Number + Client Code&lt;br&gt;OR &lt;br&gt;Payment link&lt;/font&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GS-R7QYty6EEZjOTe-C8-44">
+          <mxGeometry x="-0.2607" relative="1" as="geometry">
+            <mxPoint x="-114" y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-46" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;sketch=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;endSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="GS-R7QYty6EEZjOTe-C8-47" parent="1" source="GS-R7QYty6EEZjOTe-C8-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="390" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-48" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;WEB&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GS-R7QYty6EEZjOTe-C8-46">
+          <mxGeometry x="0.1592" y="-1" relative="1" as="geometry">
+            <mxPoint x="-12" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-47" value="" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;fillColor=none;strokeColor=none;resizable=0;perimeter=centerPerimeter;rotatable=0;allowArrows=0;points=[];outlineConnect=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="300" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-50" value="Administration console" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="525" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-51" value="&amp;lt;&amp;lt;external&amp;gt;&amp;gt;&lt;br&gt;Merchand Website" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="676.32" y="470" width="109.12" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-52" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=halfCircle;endFill=0;endSize=6;strokeWidth=1;sketch=0;exitX=-0.04;exitY=0.52;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;exitPerimeter=0;" edge="1" parent="1" source="GS-R7QYty6EEZjOTe-C8-51" target="GS-R7QYty6EEZjOTe-C8-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="555" y="555" as="sourcePoint" />
+            <mxPoint x="395" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDSiP3KEKzqP4neDnxqL-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GS-R7QYty6EEZjOTe-C8-53" target="GS-R7QYty6EEZjOTe-C8-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-53" value="Deploily&lt;br&gt;SATIM Emulator" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="420" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-54" value="&amp;lt;&amp;lt;external&amp;gt;&amp;gt;&lt;br&gt;SATIM.dz" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="20" y="370" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-65" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GS-R7QYty6EEZjOTe-C8-55" target="GS-R7QYty6EEZjOTe-C8-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-55" value="Final customer" style="shape=umlActor;verticalLabelPosition=top;verticalAlign=bottom;html=1;labelPosition=center;align=center;" vertex="1" parent="1">
+          <mxGeometry x="715.88" y="275" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="GS-R7QYty6EEZjOTe-C8-56" target="GS-R7QYty6EEZjOTe-C8-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-76" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="GS-R7QYty6EEZjOTe-C8-75">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="655" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-81" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="GS-R7QYty6EEZjOTe-C8-56" target="GS-R7QYty6EEZjOTe-C8-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-56" value="&lt;br&gt;Developer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="715.88" y="620" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="GS-R7QYty6EEZjOTe-C8-57" target="GS-R7QYty6EEZjOTe-C8-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-82" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GS-R7QYty6EEZjOTe-C8-57" target="GS-R7QYty6EEZjOTe-C8-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-83" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="GS-R7QYty6EEZjOTe-C8-57" target="GS-R7QYty6EEZjOTe-C8-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-87" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="GS-R7QYty6EEZjOTe-C8-57" target="GS-R7QYty6EEZjOTe-C8-79">
+          <mxGeometry x="0.3341" y="-21" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-57" value="Business manager" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="635" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-69" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;TEST&lt;br&gt;PROD&lt;/font&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=halfCircle;endFill=0;endSize=6;strokeWidth=1;sketch=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="GS-R7QYty6EEZjOTe-C8-71" parent="1" source="GS-R7QYty6EEZjOTe-C8-54">
+          <mxGeometry x="0.0667" y="25" relative="1" as="geometry">
+            <mxPoint x="520" y="355" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-70" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;sketch=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;endSize=10;exitX=-0.013;exitY=0.371;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;exitPerimeter=0;" edge="1" target="GS-R7QYty6EEZjOTe-C8-71" parent="1" source="GS-R7QYty6EEZjOTe-C8-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="355" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="250" y="296" />
+              <mxPoint x="250" y="395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-71" value="" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;fillColor=none;strokeColor=none;resizable=0;perimeter=centerPerimeter;rotatable=0;allowArrows=0;points=[];outlineConnect=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="390" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-72" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=halfCircle;endFill=0;endSize=6;strokeWidth=1;sketch=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" target="GS-R7QYty6EEZjOTe-C8-74" parent="1" source="GS-R7QYty6EEZjOTe-C8-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="320" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-73" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;sketch=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;endSize=10;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" target="GS-R7QYty6EEZjOTe-C8-74" parent="1" source="GS-R7QYty6EEZjOTe-C8-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="322.5" y="425" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-74" value="" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;fillColor=none;strokeColor=none;resizable=0;perimeter=centerPerimeter;rotatable=0;allowArrows=0;points=[];outlineConnect=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="380" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-75" value="Client modules&lt;br&gt;Python + NodeJs" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="435" y="630" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-78" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="GS-R7QYty6EEZjOTe-C8-77" target="GS-R7QYty6EEZjOTe-C8-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-77" value="&amp;lt;&amp;lt;external&amp;gt;&amp;gt;&lt;br&gt;cibweb.dz" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="20" y="640" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-80" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GS-R7QYty6EEZjOTe-C8-79" target="GS-R7QYty6EEZjOTe-C8-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-79" value="Deploily" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="455" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GS-R7QYty6EEZjOTe-C8-86" value="&lt;h5&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Send Payment link Or Invoice number+client code&lt;/font&gt;&lt;/h5&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GS-R7QYty6EEZjOTe-C8-57" target="GS-R7QYty6EEZjOTe-C8-55">
+          <mxGeometry x="-0.4532" y="-10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="790" />
+              <mxPoint x="820" y="790" />
+              <mxPoint x="820" y="305" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="hLimqtwNzHHpuwkxG9pz" name="TTK-Epay Chronology">
+    <mxGraphModel dx="2568" dy="1326" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cqpZvnk0u8XQRbCwWYFP-1" value="&lt;b&gt;Business manager : &lt;br&gt;&lt;/b&gt;Purchase module on deploily&lt;br&gt;Access My Applications&lt;br&gt;Read the documentation (user guidelines)&lt;br&gt;&lt;br&gt;Fill brand elements (name, website, address, logo, phone, email, urls privacy/terms)&lt;br&gt;&lt;br&gt;&lt;i&gt;&lt;b&gt;Developement TEST&lt;/b&gt;&lt;br&gt;&lt;/i&gt;Choose &quot;SATIM Emulator&quot; as SATIM URL&lt;br&gt;Access SATIM Emulator (URL should be near the choice)&lt;br&gt;Copy userName + Password + TerminalD and fill them in Deploily UI&lt;br&gt;Acces &quot;Admin console&quot; using Secret Key + Access URL&lt;br&gt;Add Invoice (+ payment ?)&amp;nbsp;&lt;br&gt;Cope Client code + invoice number &lt;br&gt;Open Acces URL and fill data --&amp;gt; Redirect to Payment page --&amp;gt; Result page (Fail or Success)&lt;br&gt;OR&amp;nbsp;Generate Payment link&amp;nbsp;&lt;br&gt;Past payment link in webbrowser --&amp;gt; Redirect to Payment page --&amp;gt; Result page (Fail or Success)&lt;br&gt;Check results in &quot;Admin console&quot; + &quot;Satim Emulator&quot;&lt;br&gt;&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Developer :&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/b&gt;Access My Applications/TTK EPay&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Read the documentation (developer)&lt;br&gt;Integrate Client module in the base code (Python /NodeJS) --&amp;gt; Must comply with SATIM requirments for pages Checkout + Fail + Success&lt;br&gt;Copy Secret Key and add it a secret&lt;br&gt;Test the API&lt;div&gt;Check results in &quot;Admin console&quot; + &quot;Satim Emulator&quot;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Business manager :&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Create an account in cibweb.dz&amp;nbsp;&lt;/div&gt;&lt;div&gt;Request Finalize Payement integration using certified payment module (use &quot;NC/07/000197/2021&quot; as module ID)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Transformatek:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Confirm module purchase&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Business manager:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Notification of ready to go on production from bank + GIE Monétique&lt;/div&gt;&lt;div&gt;Sign contract with the bank&lt;/div&gt;&lt;div&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;SATIM TEST&lt;/b&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;Request for Regsression tests from SATIM&lt;/div&gt;&lt;div&gt;Change &quot;SATIM Emulator&quot; to &quot;SATIM TEST&quot; as SATIM URL&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Fill userName + Password + TerminalD given from SATIM in Deploily UI -&amp;gt; Request update&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Create 5 or more invoices in &quot;Admin Console&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Send Acces url to SATIM with invoices numbers + client code&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;SATIM&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Test different cases (Fail + Success + ...)&lt;/div&gt;&lt;div&gt;In case of problem contact&amp;nbsp;&lt;b style=&quot;background-color: initial;&quot;&gt;Transformatek&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Notification of Certification from SATIM&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Sign contract bank+satim&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;SATIM PRODUCTION&lt;/b&gt;&lt;/i&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;Business manager&lt;/b&gt;:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;div&gt;Receive Production params from SATIM&lt;/div&gt;&lt;div&gt;&lt;div&gt;Change &quot;SATIM Emulator&quot; to &quot;SATIM PRODUCTION&quot; as SATIM URL&lt;/div&gt;&lt;div&gt;Fill userName + Password + TerminalD given from SATIM in Deploily UI -&amp;gt; Request update&amp;nbsp;&lt;/div&gt;&lt;div&gt;Create 2 or more invoices in &quot;Admin Console&quot;&lt;/div&gt;&lt;div&gt;Test with real card / money and take screenshots --&amp;gt; save in file&amp;nbsp;&lt;/div&gt;&lt;div&gt;Send screenshot file to SATIM&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Start using the module by allowing access on Merchant website OR sending payement links&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Final user&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Pay&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Enjoy&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1470" width="640" height="980" as="geometry" />
+        </mxCell>
+        <mxCell id="apAw7LJurLfyJ3jNyxe--2" value="&lt;div&gt;We should have like a matrix where&lt;/div&gt;&lt;div&gt;In columns, we have : Busines manager, Developer, Transformatek, cibweb.dz, SATIM&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;In rows, we have: Developement Testing (use of Emulator), Pre-Production Testing (Use of Satim in test mode), Production (Satim in production)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="790" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lunYuDc99eyswJ24xA4-14" value="Pool" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;horizontal=0;horizontalStack=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="895" y="70" width="1640" height="3590" as="geometry" />
+        </mxCell>
+        <mxCell id="5lunYuDc99eyswJ24xA4-15" value="&amp;nbsp;Busines manager" style="swimlane;html=1;startSize=20;" vertex="1" parent="5lunYuDc99eyswJ24xA4-14">
+          <mxGeometry x="20" width="400" height="3590" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="luqGIp5VpdaXEEYRCC4a-13" target="luqGIp5VpdaXEEYRCC4a-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-13" value="Purchase module on deploily" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="101" y="40" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="luqGIp5VpdaXEEYRCC4a-14" target="luqGIp5VpdaXEEYRCC4a-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-14" value="Access My Applications" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="101" y="120" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="luqGIp5VpdaXEEYRCC4a-18" target="luqGIp5VpdaXEEYRCC4a-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-18" value="Read the documentation (user guidelines)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="101" y="210" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="luqGIp5VpdaXEEYRCC4a-19" target="luqGIp5VpdaXEEYRCC4a-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-19" value="Fill brand elements (name, website,.....)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="101" y="320" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="luqGIp5VpdaXEEYRCC4a-23" target="luqGIp5VpdaXEEYRCC4a-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="191" y="490" />
+              <mxPoint x="191" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-23" value="Choose &quot;SATIM Emulator&quot; as SATIM URL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="101" y="420" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="luqGIp5VpdaXEEYRCC4a-25" target="luqGIp5VpdaXEEYRCC4a-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-25" value="Access SATIM Emulator (URL should be near the choice)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="106" y="530" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="luqGIp5VpdaXEEYRCC4a-42" target="luqGIp5VpdaXEEYRCC4a-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-42" value="Copy userName + Password + TerminalD and fill them in Deploily UI" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="106" y="640" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="luqGIp5VpdaXEEYRCC4a-47" target="luqGIp5VpdaXEEYRCC4a-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-47" value="Acces &quot;Admin console&quot; using Secret Key + Access URL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="106" y="760" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-50" value="Cope Client code + invoice number" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="106" y="860" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-54" value="Add Invoice&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="101" y="960" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.529;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="luqGIp5VpdaXEEYRCC4a-50" target="luqGIp5VpdaXEEYRCC4a-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-58" value="Cope Client code + invoice number" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="103.5" y="1060" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.487;entryY=-0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="luqGIp5VpdaXEEYRCC4a-54" target="luqGIp5VpdaXEEYRCC4a-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.441;entryY=0.028;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="188" y="1120" as="sourcePoint" />
+            <mxPoint x="187.97000000000003" y="1161.68" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="188" y="1130" />
+              <mxPoint x="188" y="1130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="luqGIp5VpdaXEEYRCC4a-92">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="1300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-4" value="Access URL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KAKHTomMEVvUc8OT-FLZ-1">
+          <mxGeometry x="-0.5107" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-92" value="Choose&#xa; payment method" style="rhombus;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="128.25" y="1160" width="121.75" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="JonnO0HG5QKYqrxzoAF--1" target="KAKHTomMEVvUc8OT-FLZ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JonnO0HG5QKYqrxzoAF--1" value="Open Acces URL and fill data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="245" y="1300" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.366;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="luqGIp5VpdaXEEYRCC4a-92">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="74.40999999999985" y="1299.22" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-7" value="Payment link" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KAKHTomMEVvUc8OT-FLZ-2">
+          <mxGeometry x="-0.2963" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-3" target="KAKHTomMEVvUc8OT-FLZ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-3" value="Past payment link in webbrowser&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="15" y="1300" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-8" target="KAKHTomMEVvUc8OT-FLZ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-8" value="Redirect to Payment page&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="100" y="1440" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-11" value="Result page (Fail or Success)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="100" y="1530" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-52" target="KAKHTomMEVvUc8OT-FLZ-121">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="188" y="1700" />
+              <mxPoint x="188" y="1700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-52" value="Check results in &quot;Admin console&quot; + &quot;Satim Emulator&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="100" y="1630" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.434;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="186" y="1590" as="sourcePoint" />
+            <mxPoint x="185.77999999999975" y="1629.6399999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="186" y="1600" />
+              <mxPoint x="186" y="1600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-121" target="KAKHTomMEVvUc8OT-FLZ-124">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="191" y="1800" />
+              <mxPoint x="191" y="1800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-121" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Create an account in&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;cibweb.dz&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="106" y="1730" width="164" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-174" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-124" target="KAKHTomMEVvUc8OT-FLZ-173">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-124" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Request Finalize Payement integration using certified payment module (use &quot;NC/07/000197/2021&quot; as module ID)&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="109" y="1830" width="164" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-173" target="KAKHTomMEVvUc8OT-FLZ-176">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-173" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Notification of ready to go on production from bank + GIE Monétique&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="109.5" y="1950" width="164" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-225" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-176" target="KAKHTomMEVvUc8OT-FLZ-224">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-176" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Sign contract with the bank&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="112" y="2050" width="164" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-227" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-224" target="KAKHTomMEVvUc8OT-FLZ-226">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="2230" />
+              <mxPoint x="200" y="2230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-224" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Request for Regsression tests from SATIM&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="112" y="2160" width="164" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-229" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-226" target="KAKHTomMEVvUc8OT-FLZ-228">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-226" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Change &quot;SATIM Emulator&quot; to &quot;SATIM TEST&quot; as SATIM URL&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="118" y="2260" width="164" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-285" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-228" target="KAKHTomMEVvUc8OT-FLZ-284">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="199" y="2460" />
+              <mxPoint x="199" y="2460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-228" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Fill userName + Password + TerminalD given from SATIM in Deploily UI -&amp;gt; Request update&amp;nbsp;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="120" y="2360" width="162" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-342" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-284" target="KAKHTomMEVvUc8OT-FLZ-341">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="199" y="2560" />
+              <mxPoint x="199" y="2560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-284" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Create 5 or more invoices in &quot;Admin Console&quot;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="120" y="2490" width="162" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-341" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Send Acces url to SATIM with invoices numbers + client code&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="118" y="2620" width="162" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-413" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp; Receive Production params&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;from SATIM&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="118" y="2750" width="162" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-477" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-414" target="KAKHTomMEVvUc8OT-FLZ-475">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-414" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Change &quot;SATIM Emulator&quot; to &quot;SATIM PRODUCTION&quot; as SATIM URL&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="120" y="2840" width="162" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-416" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.488;entryY=-0.018;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-413" target="KAKHTomMEVvUc8OT-FLZ-414">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-479" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-475" target="KAKHTomMEVvUc8OT-FLZ-478">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-475" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Fill userName + Password + TerminalD given from SATIM in Deploily UI&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="120" y="2940" width="162" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-481" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-478" target="KAKHTomMEVvUc8OT-FLZ-480">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-478" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Create 2 or more invoices in &quot;Admin Console&quot;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="120" y="3060" width="162" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-483" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-480" target="KAKHTomMEVvUc8OT-FLZ-482">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-480" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Test with real card / money and take screenshots and save in file&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="119" y="3150" width="162" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-485" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-15" source="KAKHTomMEVvUc8OT-FLZ-482" target="KAKHTomMEVvUc8OT-FLZ-484">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-482" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Send screenshot file to&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;SATIM&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="120" y="3240" width="162" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-484" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Start using the module by allowing access on Merchant website OR sending payement links&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-15">
+          <mxGeometry x="120" y="3330" width="162" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5lunYuDc99eyswJ24xA4-16" value="Developer" style="swimlane;html=1;startSize=20;" vertex="1" parent="5lunYuDc99eyswJ24xA4-14">
+          <mxGeometry x="420" width="310" height="3590" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-16" source="KAKHTomMEVvUc8OT-FLZ-92" target="KAKHTomMEVvUc8OT-FLZ-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-92" value="Access My Applications/TTK EPay" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-16">
+          <mxGeometry x="85" y="1630" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-16" source="KAKHTomMEVvUc8OT-FLZ-95" target="KAKHTomMEVvUc8OT-FLZ-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-95" value="Read the documentation (developer)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-16">
+          <mxGeometry x="85" y="1730" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-16" source="KAKHTomMEVvUc8OT-FLZ-96" target="KAKHTomMEVvUc8OT-FLZ-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-96" value="Integrate Client module in the base code (Python /NodeJS) --(Must comply with SATIM requirments for pages)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-16">
+          <mxGeometry x="85" y="1840" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-16" source="KAKHTomMEVvUc8OT-FLZ-103" target="KAKHTomMEVvUc8OT-FLZ-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-103" value="Checkout (Fail + Success)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-16">
+          <mxGeometry x="85" y="1970" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-16" source="KAKHTomMEVvUc8OT-FLZ-117" target="KAKHTomMEVvUc8OT-FLZ-118">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-117" value="Copy Secret Key and add it a secret" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-16">
+          <mxGeometry x="85" y="2070" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-118" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Check results in &quot;Admin console&quot; + &quot;Satim Emulator&quot;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-16">
+          <mxGeometry x="85" y="2170" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-175" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="5lunYuDc99eyswJ24xA4-16" target="KAKHTomMEVvUc8OT-FLZ-173">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="407.5" y="1859" as="sourcePoint" />
+            <mxPoint x="-105" y="2029" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="378" y="1859" />
+              <mxPoint x="378" y="1944" />
+              <mxPoint x="-53" y="1944" />
+              <mxPoint x="-53" y="1980" />
+              <mxPoint x="-105" y="1980" />
+              <mxPoint x="-105" y="2003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5lunYuDc99eyswJ24xA4-17" value="Transformatek" style="swimlane;html=1;startSize=20;" vertex="1" parent="5lunYuDc99eyswJ24xA4-14">
+          <mxGeometry x="730" width="310" height="3590" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-168" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Confirm module purchase&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="5lunYuDc99eyswJ24xA4-17">
+          <mxGeometry x="95" y="1840" width="164" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-1" value="cibweb.dz" style="swimlane;html=1;startSize=20;" vertex="1" parent="5lunYuDc99eyswJ24xA4-14">
+          <mxGeometry x="1040" width="290" height="3590" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-10" value="SATIM" style="swimlane;html=1;startSize=20;" vertex="1" parent="5lunYuDc99eyswJ24xA4-14">
+          <mxGeometry x="1330" width="310" height="3590" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-403" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="luqGIp5VpdaXEEYRCC4a-10" source="KAKHTomMEVvUc8OT-FLZ-401" target="KAKHTomMEVvUc8OT-FLZ-402">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-401" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp; &amp;nbsp;Test different cases (Fail +&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Success + ...)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="luqGIp5VpdaXEEYRCC4a-10">
+          <mxGeometry x="55" y="2600" width="162" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-412" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="luqGIp5VpdaXEEYRCC4a-10" source="KAKHTomMEVvUc8OT-FLZ-402" target="KAKHTomMEVvUc8OT-FLZ-411">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-402" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp; Notification of Certification&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; from SATIM&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="luqGIp5VpdaXEEYRCC4a-10">
+          <mxGeometry x="55" y="2730" width="162" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-411" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Sign contract bank+satim&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="luqGIp5VpdaXEEYRCC4a-10">
+          <mxGeometry x="55" y="2830" width="162" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KAKHTomMEVvUc8OT-FLZ-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5lunYuDc99eyswJ24xA4-14" source="KAKHTomMEVvUc8OT-FLZ-52" target="KAKHTomMEVvUc8OT-FLZ-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-93" value="Condition" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="640" y="250" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-94" value="no" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="luqGIp5VpdaXEEYRCC4a-93" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="820" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="luqGIp5VpdaXEEYRCC4a-95" value="yes" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="luqGIp5VpdaXEEYRCC4a-93" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="680" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="BPMN TTK-Epay-old" id="2a216829-ef6e-dabb-86c1-c78162f3ba2b">
+    <mxGraphModel dx="2088" dy="1326" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0ls7EUhcwdwxOQOBH-4x-1" value="Pool" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;whiteSpace=wrap;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="1" vertex="1">
+          <mxGeometry x="60" y="90" width="1390" height="730" as="geometry" />
+        </mxCell>
+        <mxCell id="0ls7EUhcwdwxOQOBH-4x-2" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Deploily user (module admin)&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;" style="swimlane;html=1;startSize=20;horizontal=0;fillColor=#b1ddf0;strokeColor=#10739e;swimlaneFillColor=default;" parent="0ls7EUhcwdwxOQOBH-4x-1" vertex="1">
+          <mxGeometry x="20" width="1370" height="730" as="geometry" />
+        </mxCell>
+        <mxCell id="0ls7EUhcwdwxOQOBH-4x-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.003;entryY=0.531;entryDx=0;entryDy=0;entryPerimeter=0;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="0ls7EUhcwdwxOQOBH-4x-5" target="F4-NNHvd13nXTIGYDslF-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="169.51428571428573" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0ls7EUhcwdwxOQOBH-4x-5" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="60" y="154.5" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0ls7EUhcwdwxOQOBH-4x-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="F4-NNHvd13nXTIGYDslF-5" target="0ls7EUhcwdwxOQOBH-4x-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1087" y="135.5" as="targetPoint" />
+            <mxPoint x="1037" y="265.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rdg7Ku8gkg67DZHqsmAa-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="0ls7EUhcwdwxOQOBH-4x-15" target="0ls7EUhcwdwxOQOBH-4x-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rdg7Ku8gkg67DZHqsmAa-2" value="Admin console&amp;nbsp;&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Rdg7Ku8gkg67DZHqsmAa-1" vertex="1" connectable="0">
+          <mxGeometry x="-0.1509" relative="1" as="geometry">
+            <mxPoint x="-16" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rdg7Ku8gkg67DZHqsmAa-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="0ls7EUhcwdwxOQOBH-4x-15" target="0ls7EUhcwdwxOQOBH-4x-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rdg7Ku8gkg67DZHqsmAa-5" value="APIs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Rdg7Ku8gkg67DZHqsmAa-4" vertex="1" connectable="0">
+          <mxGeometry x="-0.15" y="-1" relative="1" as="geometry">
+            <mxPoint x="22" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0ls7EUhcwdwxOQOBH-4x-15" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="987" y="250.5" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Rdg7Ku8gkg67DZHqsmAa-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="0ls7EUhcwdwxOQOBH-4x-20" target="0ls7EUhcwdwxOQOBH-4x-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0ls7EUhcwdwxOQOBH-4x-20" value="Integrate APIs in his own system&amp;nbsp;&lt;div&gt;&lt;font color=&quot;#3f3f3f&quot;&gt;(clients python, nodejs)&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="757" y="328" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Rdg7Ku8gkg67DZHqsmAa-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="0ls7EUhcwdwxOQOBH-4x-24" target="0ls7EUhcwdwxOQOBH-4x-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0ls7EUhcwdwxOQOBH-4x-24" value="Connect to Admin console&lt;div&gt;[Secret key + URL]&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="1127" y="318" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0ls7EUhcwdwxOQOBH-4x-26" value="Create invoice&lt;div&gt;&lt;span style=&quot;color: rgb(63 , 63 , 63)&quot;&gt;&amp;nbsp;and generate payment link&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="947" y="418" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="F4-NNHvd13nXTIGYDslF-1" value="&lt;font style=&quot;font-size: 9px&quot;&gt;Test&lt;br&gt;&amp;nbsp;with MVC inteface&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;sketch=0;verticalAlign=top;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="982" y="508" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F4-NNHvd13nXTIGYDslF-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="0ls7EUhcwdwxOQOBH-4x-26" target="F4-NNHvd13nXTIGYDslF-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F4-NNHvd13nXTIGYDslF-5" value="Fill params in My Apps" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="947" y="148" width="130" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Rdg7Ku8gkg67DZHqsmAa-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="F4-NNHvd13nXTIGYDslF-8" target="F4-NNHvd13nXTIGYDslF-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F4-NNHvd13nXTIGYDslF-8" value="Register to cibweb.dz and get credentials" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="751" y="208" width="130" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Rdg7Ku8gkg67DZHqsmAa-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="Q-IKyag9T__VhJrZm3u5-1" target="F4-NNHvd13nXTIGYDslF-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="355" y="227" />
+              <mxPoint x="441" y="227" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F4-NNHvd13nXTIGYDslF-9" value="Order TTK-EPay in Deploily" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="160" y="148.25" width="130" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="F4-NNHvd13nXTIGYDslF-3" value="Make the payment" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="957" y="599" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t96utgd7OBVZw5RXslNG-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="0ls7EUhcwdwxOQOBH-4x-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1017" y="566" as="sourcePoint" />
+            <mxPoint x="1017" y="599" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-98" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="F4-NNHvd13nXTIGYDslF-9" target="Q-IKyag9T__VhJrZm3u5-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="250" as="sourcePoint" />
+            <mxPoint x="511" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-1" value="&lt;font style=&quot;font-size: 9px&quot;&gt;Test&lt;br&gt;&amp;nbsp;with MVC inteface&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;sketch=0;verticalAlign=top;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="320" y="139.5" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="Q-IKyag9T__VhJrZm3u5-134" target="Q-IKyag9T__VhJrZm3u5-135" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-134" value="&lt;em data-end=&quot;765&quot; data-start=&quot;738&quot;&gt;Connect to SATIM Emulator&lt;/em&gt;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="390" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-135" value="&lt;em data-end=&quot;840&quot; data-start=&quot;784&quot;&gt;Retrieve credentials (satim_username &amp;amp; satim_password)&lt;/em&gt;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="560" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="Q-IKyag9T__VhJrZm3u5-1" target="Q-IKyag9T__VhJrZm3u5-134" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="Q-IKyag9T__VhJrZm3u5-138" target="F4-NNHvd13nXTIGYDslF-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-138" value="&lt;em style=&quot;&quot; data-end=&quot;890&quot; data-start=&quot;857&quot;&gt;Use credentials in API requests&lt;/em&gt; (&lt;code style=&quot;&quot; data-end=&quot;905&quot; data-start=&quot;892&quot;&gt;register.do&lt;/code&gt;, &lt;code style=&quot;&quot; data-end=&quot;924&quot; data-start=&quot;907&quot;&gt;confirmOrder.do&lt;/code&gt;)" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="751" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="0ls7EUhcwdwxOQOBH-4x-2" source="Q-IKyag9T__VhJrZm3u5-135" target="Q-IKyag9T__VhJrZm3u5-138" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-175" value="Pool" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;whiteSpace=wrap;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="0ls7EUhcwdwxOQOBH-4x-2" vertex="1">
+          <mxGeometry x="-20" y="-2" width="1390" height="730" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-176" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Deploily user (module admin)&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;" style="swimlane;html=1;startSize=20;horizontal=0;fillColor=#b1ddf0;strokeColor=#10739e;swimlaneFillColor=default;" parent="Q-IKyag9T__VhJrZm3u5-175" vertex="1">
+          <mxGeometry x="20" width="1370" height="730" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-177" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.003;entryY=0.531;entryDx=0;entryDy=0;entryPerimeter=0;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-178" target="Q-IKyag9T__VhJrZm3u5-196" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="169.51428571428573" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-178" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="60" y="154.5" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-179" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-192" target="Q-IKyag9T__VhJrZm3u5-184" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1087" y="135.5" as="targetPoint" />
+            <mxPoint x="1037" y="265.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-180" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-184" target="Q-IKyag9T__VhJrZm3u5-188" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-181" value="Admin console&amp;nbsp;&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Q-IKyag9T__VhJrZm3u5-180" vertex="1" connectable="0">
+          <mxGeometry x="-0.1509" relative="1" as="geometry">
+            <mxPoint x="-16" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-184" target="Q-IKyag9T__VhJrZm3u5-186" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-183" value="APIs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Q-IKyag9T__VhJrZm3u5-182" vertex="1" connectable="0">
+          <mxGeometry x="-0.15" y="-1" relative="1" as="geometry">
+            <mxPoint x="22" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-184" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="987" y="250.5" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-185" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-186" target="Q-IKyag9T__VhJrZm3u5-189" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-186" value="Integrate APIs in his own system&amp;nbsp;&lt;div&gt;&lt;font color=&quot;#3f3f3f&quot;&gt;(clients python, nodejs)&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="757" y="328" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-187" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-188" target="Q-IKyag9T__VhJrZm3u5-189" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-188" value="Connect to Admin console&lt;div&gt;[Secret key + URL]&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="1127" y="318" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-189" value="Create invoice&lt;div&gt;&lt;span style=&quot;color: rgb(63 , 63 , 63)&quot;&gt;&amp;nbsp;and generate payment link&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="947" y="418" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-190" value="&lt;font style=&quot;font-size: 9px&quot;&gt;Test&lt;br&gt;&amp;nbsp;with MVC inteface&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;sketch=0;verticalAlign=top;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="982" y="508" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-191" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-189" target="Q-IKyag9T__VhJrZm3u5-190" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-192" value="Fill params in My Apps" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="947" y="148" width="130" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-194" target="Q-IKyag9T__VhJrZm3u5-192" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-194" value="Register to cibweb.dz and get credentials" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="751" y="208" width="130" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-195" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-200" target="Q-IKyag9T__VhJrZm3u5-194" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="355" y="227" />
+              <mxPoint x="441" y="227" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-196" value="Order TTK-EPay in Deploily" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="160" y="148.25" width="130" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-197" value="Make the payment" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="957" y="599" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-198" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Q-IKyag9T__VhJrZm3u5-176" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1017" y="566" as="sourcePoint" />
+            <mxPoint x="1017" y="599" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-199" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-196" target="Q-IKyag9T__VhJrZm3u5-200" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="250" as="sourcePoint" />
+            <mxPoint x="511" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-200" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;sketch=0;verticalAlign=top;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="320" y="139.5" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-201" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-202" target="Q-IKyag9T__VhJrZm3u5-203" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-202" value="&lt;em data-end=&quot;765&quot; data-start=&quot;738&quot;&gt;Connect to SATIM Emulator&lt;/em&gt;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="390" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-203" value="&lt;em data-end=&quot;840&quot; data-start=&quot;784&quot;&gt;Retrieve credentials (satim_username &amp;amp; satim_password)&lt;/em&gt;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="560" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-204" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-200" target="Q-IKyag9T__VhJrZm3u5-202" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-205" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-206" target="Q-IKyag9T__VhJrZm3u5-192" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-206" value="&lt;em style=&quot;&quot; data-end=&quot;890&quot; data-start=&quot;857&quot;&gt;Use credentials in API requests&lt;/em&gt; (&lt;code style=&quot;&quot; data-end=&quot;905&quot; data-start=&quot;892&quot;&gt;register.do&lt;/code&gt;, &lt;code style=&quot;&quot; data-end=&quot;924&quot; data-start=&quot;907&quot;&gt;confirmOrder.do&lt;/code&gt;)" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Q-IKyag9T__VhJrZm3u5-176" vertex="1">
+          <mxGeometry x="751" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-IKyag9T__VhJrZm3u5-207" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="Q-IKyag9T__VhJrZm3u5-176" source="Q-IKyag9T__VhJrZm3u5-203" target="Q-IKyag9T__VhJrZm3u5-206" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
