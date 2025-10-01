@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" modified="2025-10-01T14:40:10.382Z" etag="t0hJdI0NonCY1Em1TTY8" version="21.6.1" type="device" pages="3">
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" modified="2025-10-01T14:52:38.048Z" etag="wvMlzGEroj3MfXKxejAg" version="21.6.1" type="device" pages="3">
   <diagram id="ue7826Uiw08qI2RY-Nqi" name="TTK-Epay-ecosystem">
     <mxGraphModel dx="1364" dy="843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -166,7 +166,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="hLimqtwNzHHpuwkxG9pz" name="TTK-Epay Chronology">
-    <mxGraphModel dx="3031" dy="1873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2273" dy="1405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1091,7 +1091,7 @@
             <mxRectangle x="3620" y="80" width="100" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KxzvD5elGGIKXpwaA3UK-134" value="Verification&#xa; status" style="rhombus;fontSize=26;" vertex="1" parent="KxzvD5elGGIKXpwaA3UK-133">
+        <mxCell id="KxzvD5elGGIKXpwaA3UK-134" value="Verification&#xa; status" style="rhombus;fontSize=23;" vertex="1" parent="KxzvD5elGGIKXpwaA3UK-133">
           <mxGeometry x="131.32" y="960" width="160.56" height="130" as="geometry" />
         </mxCell>
         <mxCell id="KxzvD5elGGIKXpwaA3UK-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=26;" edge="1" parent="KxzvD5elGGIKXpwaA3UK-133" source="KxzvD5elGGIKXpwaA3UK-134">
@@ -1099,7 +1099,7 @@
             <mxPoint x="318.38" y="1160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KxzvD5elGGIKXpwaA3UK-136" value="Succes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=26;" vertex="1" connectable="0" parent="KxzvD5elGGIKXpwaA3UK-135">
+        <mxCell id="KxzvD5elGGIKXpwaA3UK-136" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Succes&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=26;" vertex="1" connectable="0" parent="KxzvD5elGGIKXpwaA3UK-135">
           <mxGeometry x="-0.3993" y="-7" relative="1" as="geometry">
             <mxPoint x="27" y="13" as="offset" />
           </mxGeometry>
@@ -1121,6 +1121,11 @@
         </mxCell>
         <mxCell id="KxzvD5elGGIKXpwaA3UK-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=26;" edge="1" source="KxzvD5elGGIKXpwaA3UK-134" target="KxzvD5elGGIKXpwaA3UK-131" parent="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KxzvD5elGGIKXpwaA3UK-177" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Fail&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KxzvD5elGGIKXpwaA3UK-142">
+          <mxGeometry x="-0.3074" y="2" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
