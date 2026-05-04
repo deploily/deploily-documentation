@@ -106,6 +106,10 @@ module.exports = {
                   type: 'doc',
                   id: 'applications/odoo/odoo-crm',
                 }, 
+                {
+                type: 'doc',
+                id: 'applications/odoo/odoo-appointment-manager',
+                },
                 { type: 'doc',
                   id: 'applications/odoo/odoo-achats',
                 },
