@@ -70,6 +70,9 @@ module.exports = {
                 { type: 'doc',
                   id: 'applications/odoo/odoo-employee',
                 },
+                { type: 'doc', 
+                  id: 'applications/odoo/odoo-payroll-dz',
+                 },
                 { type: 'doc',
                   id: 'applications/odoo/odoo-presence',
                 },
@@ -89,12 +92,24 @@ module.exports = {
                 },
                 {
                   type: 'doc',
+                  id: 'applications/odoo/odoo-cashflow',
+                },
+                {
+                  type: 'doc',
+                  id: 'applications/odoo/odoo-contact',
+                },
+                {
+                  type: 'doc',
                   id: 'applications/odoo/odoo-vente',
                 }, 
                 {
                   type: 'doc',
                   id: 'applications/odoo/odoo-crm',
                 }, 
+                {
+                type: 'doc',
+                id: 'applications/odoo/odoo-appointment-manager',
+                },
                 { type: 'doc',
                   id: 'applications/odoo/odoo-achats',
                 },
@@ -123,7 +138,7 @@ module.exports = {
             },
             {
               type: 'category',
-              label: 'Scénarios de déploiement',
+              label: 'Scénarios de déploiement',
               items: [
            
                 { type: 'doc',
@@ -134,22 +149,6 @@ module.exports = {
                 },
               ],
             },
-            
-         
-         
-         
-         
-          
-           
-       
-       
-      
-       
-       
-       
-           
-          
-           
           ]
         
         },
@@ -170,5 +169,3 @@ module.exports = {
     },
   ],
 };
-
-

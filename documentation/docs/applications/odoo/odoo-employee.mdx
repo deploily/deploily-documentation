@@ -100,6 +100,133 @@ Ainsi pour chaque employés un contrat peut être crée avec tous les renseignem
 
 ![employés-contrat](./images/employes-contrat.png)
 
+---
+## Extension Algérienne du Module Employés (`l10n_dz_payroll`)
+
+Le module **`l10n_dz_payroll`** étend le module standard Employés d'Odoo avec les champs requis par la réglementation algérienne en matière de paie.
+
+---
+
+### Informations personnelles supplémentaires (fiche employé)
+
+La fiche employé est enrichie avec les données personnelles et administratives nécessaires au calcul de la paie DZ :
+
+| Champ | Description |
+|---|---|
+| **Situation familiale** | Célibataire, Marié(e), Divorcé(e), Veuf/Veuve |
+| **Nombre d'enfants à charge** | Entier, utilisé pour le calcul des déductions IRG et allocations familiales |
+| **Conjoint travaille** | Si coché, la déduction conjoint IRG ne s'applique pas |
+| **N° Sécurité Sociale (CNAS)** | Numéro d'affiliation CNAS de l'employé |
+| **NIF** | Numéro d'Identification Fiscale |
+| **Direction** | Direction ou département d'affectation |
+| **Taux IRG spécifique (%)** | Taux fixe optionnel — remplace le barème progressif si renseigné |
+
+> **Note :** Si le champ **Taux IRG spécifique** est renseigné, le calcul de l'impôt utilisera ce taux forfaitaire au lieu du barème progressif par tranches.
+
+---
+
+### Extension du contrat de travail
+
+Le contrat de travail est également étendu avec de nombreux champs propres à la législation algérienne, regroupés en trois catégories selon leur traitement fiscal et social.
+
+#### Identification du salarié
+
+| Champ | Description |
+|---|---|
+| **Matricule** | Numéro matricule interne de l'employé |
+| **N° CNAS** | Numéro d'affiliation CNAS (contrat) |
+| **N° Compte Bancaire / CCP** | Coordonnées bancaires pour virement du salaire |
+
+#### Classification professionnelle
+
+| Champ | Description |
+|---|---|
+| **Grade** | Grade du salarié |
+| **Catégorie Professionnelle** | Ex : Cadre, Agent de maîtrise, Ouvrier qualifié... |
+| **Poste occupé** | Intitulé du poste |
+| **Salaire de poste (DA)** | Salaire de base afférent au poste occupé |
+
+#### Paramètres de calcul
+
+| Champ | Description |
+|---|---|
+| **Date de recrutement** | Utilisée pour le calcul de l'ancienneté (IEP) |
+| **Jours ouvrables / mois** | Défaut : 26 jours |
+
+#### Rubriques salariales — OUI CNAS / OUI IRG
+
+Ces rubriques entrent dans la base de calcul CNAS **et** IRG :
+
+| N° | Rubrique |
+|---|---|
+| 5 | Indemnité de Travail Posté (ITP) |
+| 6 | Indemnité Forfaitaire de Service Permanent (IFSP) |
+| 7 | Indemnité de Nuisance |
+| 8 | Indemnité de Travail de Nuit |
+| 9 | Indemnité d'Intérim |
+| 10 | Prime de Permanence |
+| 11 | Indemnité Forfaitaire de Fonction |
+| 12 | Indemnité de Caisse |
+| 13 | Indemnité de Sujétion Spéciale |
+| 14 | Indemnité d'Astreinte |
+| 15 | Heures Supplémentaires |
+| 16 | Indemnité de Congé Annuel |
+| 17 | Prime d'Inventaire |
+| 18 | Prime de Bilan |
+| 19 | PRI — Prime de Rendement Individuel |
+| 20 | PRC — Prime de Résultats Collectifs |
+
+#### Rubriques salariales — NON CNAS / OUI IRG
+
+Ces rubriques **ne** sont **pas** soumises à la CNAS mais restent soumises à l'IRG :
+
+| N° | Rubrique |
+|---|---|
+| 21 | Indemnité de Départ en Retraite |
+| 25 | Panier (si vide, le taux légal est utilisé) |
+| 27 | Prime de Mariage |
+| 28 | Prime d'Utilisation du Véhicule Personnel |
+
+#### Rubriques salariales — NON CNAS / NON IRG
+
+Ces rubriques sont **exonérées** de CNAS et d'IRG :
+
+| N° | Rubrique |
+|---|---|
+| 22 | Indemnité de Décès |
+| 23 | Prime de Scolarité |
+| 29 | Frais de Mission |
+| 30 | Prime de Zone Géographique — Isolement |
+| 31 | Indemnité de Licenciement |
+
+> **Note :** Le Salaire Unique (N°24) et les Allocations Familiales (N°32) sont calculés automatiquement par le système en fonction de la situation familiale de l'employé.
+
+---
+
+### Attestation de Travail et de Salaire
+
+Le module intègre un **wizard de génération** d'attestations de travail et de salaire conformes au format algérien.
+
+**Accès :** Menu Employés → Actions → Générer Attestation
+
+
+![description de l'image](./images/attestation-travail-salaire.png)
+
+
+![description de l'image](./images/attestation-travail-salaire-2.png)
+
+
+**Étapes :**
+1. Sélectionner l'employé concerné
+2. Choisir l'année de référence
+3. Cliquer sur **Imprimer** pour produire le rapport PDF
+
+![description de l'image](./images/attestation-travail-salaire-3.png)
+
+Le rapport PDF IMPRI est conforme au format administratif DZ et mentionne les informations du contrat en cours (poste, salaire, matricule, N° CNAS, etc.).
+
+---
+
 ## Workflow
 
 ![workflow-employes](./diagrams/exports/activity-employes/activity-employes.png)

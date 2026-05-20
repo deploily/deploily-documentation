@@ -156,6 +156,61 @@ Cette section est similaire à celle des **Client** avec les différences suivan
 * les **_Réceptions_** font référence à des **Reçus d'achats**.
 * les articles listés sont ceux **pouvant être achetés**.
 
+
+## Fonctionnalités Algériennes
+
+### Montant en Lettres — `amount_to_text_dz`
+
+Ce module ajoute automatiquement le montant en toutes lettres (en français) en bas des documents imprimés suivants :
+
+![description de l'image](./images/amount2.png)
+![description de l'image](./images/amount_to_text_dz.png)
+
+
+
+
+* **Factures clients** : `ARRETEE LA PRESENTE FACTURE A LA SOMME DE: ...`
+* **Bons de commande** : `ARRETEE LA PRESENTE COMMANDE A LA SOMME DE: ...`
+* **Devis / Facture Proforma** : `ARRETEE LE PRESENT DEVIS/FACTURE PROFORMA A LA SOMME DE: ...`
+
+Le montant est converti automatiquement en français lors de l'impression du PDF, sans aucune action manuelle requise.
+
+### Droit de Timbre Fiscal — `l10n_dz_timbre`
+
+Ce module gère le calcul du **droit de timbre fiscal** conformément à la législation algérienne. Il s'applique uniquement aux **paiements en espèces**.
+
+#### Activation du paiement en espèces
+
+Sur le formulaire de la facture, un bouton toggle **Paiement en espèces** permet d'activer ou désactiver le timbre :
+
+* **Activé** : le montant du timbre et le total avec timbre s'affichent sur la facture et dans le PDF imprimé.
+* **Désactivé** : aucun timbre n'est appliqué (paiement par virement bancaire, CCP ou moyen électronique).
+
+![description de l'image](./images/timbre.png)
+
+
+#### Logique de calcul
+
+Le calcul du timbre dépend de la **date de la facture** :
+
+**Avant le 01/01/2025 (ancienne logique)** — basée sur les paramètres configurés dans le système.
+
+Accès : Menu Facturation → Configuration → Configuration Timbre
+![description de l'image](./images/configuration-timbre.png)
+
+**À partir du 01/01/2025 (Loi de Finances 2025)** — barème progressif :
+
+| Montant de la facture | Taux par tranche de 100 DA |
+|---|---|
+| Entre 300 DA et 30 000 DA | 1 DA |
+| Entre 30 000 DA et 100 000 DA | 1,5 DA |
+| Supérieur à 100 000 DA | 2 DA |
+
+* Le montant minimum du timbre est de **5 DA**.
+* Les paiements par **virement bancaire, postal ou électronique** sont **exonérés** du timbre (Article 258 du Code du timbre).
+
+
+
 ## Analyse
 
 La partie analyse permet aux **Gestionnaires des factures** de visualiser des vues synthétiques de la situation de la facturation sous différentes formes : listes, tableau croisé, graphes.
@@ -163,6 +218,9 @@ La partie analyse permet aux **Gestionnaires des factures** de visualiser des vu
 ## Workflow
 
 ![](./diagrams/exports/activity-facturation/activity-facturation.png)
+
+---
+
 
 ## Plus de détails
 
@@ -175,4 +233,3 @@ La partie analyse permet aux **Gestionnaires des factures** de visualiser des vu
 
 ----
 🔗 **Official Resource**: [Odoo Documentation](https://www.odoo.com/documentation)
-

@@ -1,0 +1,136 @@
+---
+id: odoo-appointment-manager
+title: Odoo Appointment Manager
+hide_title: true
+---
+
+# Module Appointment Manager
+
+Ce document illustre les fonctionnalités du module **Appointment Manager** pour Odoo 18, conçu pour la gestion des rendez-vous avec intégration CRM et formulaire de réservation en ligne.
+
+## Présentation du module
+
+Le module **Appointment Manager** permet de gérer les rendez-vous clients directement depuis Odoo. Il offre un formulaire de réservation en ligne accessible publiquement, une gestion des créneaux de disponibilité, une intégration automatique avec le CRM, et un envoi d'email de confirmation automatique.
+
+## Fonctionnalités principales
+
+### Gestion des Rendez-vous
+
+Chaque rendez-vous contient les informations suivantes :
+
+* **Référence** — générée automatiquement (ex : RDV/0001).
+* **Nom du client** — nom complet du client.
+* **Email** — adresse email du client.
+* **Téléphone** — numéro de téléphone (optionnel).
+* **Société** — nom de la société du client (optionnel).
+* **Raison / Message** — description de la raison du rendez-vous.
+* **Date du rendez-vous** — date choisie par le client.
+* **Heure** — heure du rendez-vous.
+* **Créneau** — créneau de disponibilité associé.
+* **Responsable** — utilisateur Odoo en charge du rendez-vous.
+* **Notes internes** — notes visibles uniquement par l'équipe.
+* **Opportunité CRM** — lien vers l'opportunité créée automatiquement dans le CRM.
+
+### États d'un rendez-vous
+
+Chaque rendez-vous progresse par les états suivants :
+
+* **Nouveau** — rendez-vous créé, en attente de traitement.
+* **Confirmé** — rendez-vous confirmé par l'équipe.
+* **Terminé** — rendez-vous effectué.
+* **Annulé** — rendez-vous annulé.
+
+### Actions disponibles
+
+* **Confirmer** — passe le rendez-vous à l'état **Confirmé**.
+* **Marquer comme terminé** — passe le rendez-vous à l'état **Terminé**.
+* **Annuler** — passe le rendez-vous à l'état **Annulé**.
+* **Voir l'opportunité CRM** — ouvre directement l'opportunité CRM liée.
+
+## Gestion des Créneaux de Disponibilité
+
+### Configuration des créneaux
+
+Les créneaux permettent de définir les jours disponibles ou indisponibles pour les réservations. Chaque créneau contient :
+
+* **Date** — jour concerné.
+* **Disponible** — toggle pour activer ou désactiver la disponibilité.
+* **Note** — indication optionnelle (ex : Férié, Congé...).
+* **Nombre de RDV** — calculé automatiquement depuis les rendez-vous liés.
+* **Lien de réservation** — lien public vers la page de réservation en ligne.
+
+### Actions sur les créneaux
+
+* **Basculer la disponibilité** — active ou désactive un créneau en un clic.
+* **Voir les rendez-vous** — affiche tous les rendez-vous liés à ce créneau.
+
+## Page de Réservation en Ligne
+
+Le module expose une **page web publique** accessible sans authentification à l'adresse :
+
+```
+https://votre-odoo.com/booking
+```
+
+### Fonctionnalités de la page
+
+* **Calendrier interactif** — affiche les jours disponibles (vert) et indisponibles (rouge) en temps réel depuis Odoo.
+* **Navigation mensuelle** — navigation entre les mois avec les boutons précédent/suivant.
+* **Sélection de date** — le client clique sur un jour disponible pour le sélectionner.
+* **Formulaire de saisie** — après sélection de la date, un formulaire apparaît avec les champs : Nom, Email, Téléphone, Société, Raison.
+* **Confirmation** — après soumission, un message de confirmation s'affiche avec la référence du rendez-vous.
+
+### Légende du calendrier
+
+| Couleur | Signification |
+|---|---|
+| 🟢 Vert | Jour disponible |
+| 🔴 Rouge | Jour indisponible |
+| 🔵 Bleu | Jour sélectionné |
+| Point rouge | Rendez-vous déjà enregistré |
+
+## Intégration CRM
+
+À chaque création d'un rendez-vous (depuis la page en ligne ou depuis Odoo), une **opportunité CRM** est créée automatiquement avec :
+
+* Le nom du client et son email.
+* La date du rendez-vous.
+* La raison / message du client.
+* Un lien direct vers le rendez-vous depuis l'opportunité.
+
+## Email de Confirmation
+
+Un **email de confirmation** est envoyé automatiquement au client à chaque création de rendez-vous, contenant les détails du rendez-vous et la référence.
+
+## Configuration
+
+### Lien de réservation global
+
+Le module génère un **lien de réservation global** accessible depuis la configuration :
+
+```
+https://votre-odoo.com/booking/<token>
+```
+
+Ce token peut être régénéré à tout moment depuis la configuration du module.
+
+## Sécurité
+
+L'accès au module est contrôlé par des groupes de sécurité :
+
+* **Utilisateur** — consultation et gestion des rendez-vous.
+* **Gestionnaire** — configuration des créneaux et accès complet.
+
+## Vue Calendrier
+
+Le module propose une **vue calendrier** permettant de visualiser tous les rendez-vous sous forme de calendrier mensuel, hebdomadaire ou journalier.
+
+## Plus de détails
+
+- Pour la gestion des opportunités, consulter le module [CRM](./odoo-crm.mdx).
+
+----
+[Retour au sommaire](./odoo-deploy-guidelines.mdx)
+
+----
+🔗 **Official Resource**: [Odoo Documentation](https://www.odoo.com/documentation)
