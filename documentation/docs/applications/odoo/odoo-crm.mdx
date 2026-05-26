@@ -3,120 +3,203 @@ id: odoo-crm
 title: Odoo Crm
 hide_title: true
 ---
-<h1 style={{ fontSize: '20px', fontWeight: 'bold'}}>Module CRM</h1>
 
-
-Ce document illustre les différentes fonctionnalités du module **CRM** d'odoo 13 community (CRM : Customer Relationship Management / Gestion de la Relation Client).
-
-## Présentation du module
-
-Ce module, orienté client par excellence, est destiné au suivi des pistes et à l'élaboration des prévisions de vente. Il permet :
-- d'utilisez des données concrètes afin de prendre les meilleures décisions.
-- d'utiliser des tableaux de bords personnalisés afin d’avoir un aperçu rapide de l'entreprise.
-- de planifier des activités en fonction des scripts de vente: appels, réunions, mailing et devis.
-- de passer facilement en revue les performances et les prochaines activités.
-- de suivez les performances en temps réel et de les comparez aux objectifs mensuels.
-- d'organiser le travail sur la base des prochaines actions planifiées.
+ 
+<h1 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '0.25rem' }}>
+  Module CRM
+</h1>
+<p style={{ fontSize: '14px', color: 'var(--ifm-color-emphasis-600)', marginBottom: '1.5rem' }}>
+  Customer Relationship Management · Odoo 18 Community &amp; Enterprise
+</p>
+:::info À propos de ce document
+Ce document illustre les différentes fonctionnalités du module **CRM** d'Odoo 18. Le CRM (Customer Relationship Management) est le module central de la gestion de la relation client.
+:::
+ 
+ **Présentation du module**
+ 
+Ce module, orienté client par excellence, est destiné au suivi des pistes et à l'élaboration des prévisions de vente.
+ 
+| Fonctionnalité | Description |
+|---------------|-------------|
+| 📊 Données concrètes | Prenez des décisions éclairées basées sur des indicateurs réels |
+| 🖥️ Tableaux de bord | Aperçu personnalisé et synthétique de l'activité commerciale |
+| 📅 Planification | Organisez vos activités : appels, réunions, mailings et devis |
+| 📈 Performances | Suivi en temps réel comparé aux objectifs mensuels |
+| ✅ Prochaines actions | Organisez le travail sur la base des actions planifiées |
 
 ![](./images/crm-overview.png)
 
-## Configuration (admin)
-
-Cette section, réservée aux **administrateurs** et **Gestionnaires des ventes**, permet de définir les paramètres généraux du module, tel que l'ajout d'une étape de qualification avant création d'une opportunité et la génération des pistes.
-
-#### Pistes
-
-L'option **_Pistes_**  active de nouvelles fonctionnalités permettant aux **Vendeurs** de disposer d'une partie dédiée à la gestion des pistes.
-
-![](./images/crm-config-pistes.png)
-
-Si cette option est activé, un nouveau menu **_Pistes_** apparait, et le **Gestionnaire des vente** peut choisir d'utiliser les courriels entrants pour la génération des pistes.
-
-![](./images/crm-config-pistes-courriels.png)
-
-#### Generation pistes
-
-![](./images/crm-config-generation-pistes.png)
-
-- L'option **_Visits to Leads_** permet de convertir les visiteur du site web en pistes (lead) à partir de leur adresse IP (**option payante**).
-- L'option **_Lead Enrichment_** permet de créer des pistes à partir des données des sociétés en se basant sur les adresses emails (**option payante**).
-- L'option **_Lead Enrichment_** permet de générer de nouvelles pistes en fonction des pays, secteurs d'activité, taille d'entreprise, ... (**option payante**).
-
-### Équipes commerciales
-
-Cette section permet de renseigner les informations nécessaires aux équipes commerciales de l'entreprise. Pour plus de détails, consulter le module [Vente](./odoo-vente.mdx).
-
-### Types d'activités
-
-Cette section permet de prédéfinir l'ensemble des activités liées à la relation client, tel que les appels téléphoniques, l'envoi d'emails, les rendez-vous, ...
-
-Pour chaque activité, les paramètres suivants sont prédéfinis.
-
-![](./images/crm-activite-new.png)
-
-### Pipeline - Étiquettes
-
-Cette section permet de prédéfinir des étiquettes a associé aux opportunités, tel que les types de produits et services (formation, conseil, ...).
-
-### Pipeline - Motifs de la perte
-
-Cette section permet de prédéfinir des motifs de pertes d'une opportunité ou d'une piste. Exemple : trop chère, pas de compétence, pas assez de stock, ...
-
-## Vente
-
-### Mon Pipeline
-
-Le pipline est l'outil le plus important dans le CRM. Il permet de définir et de suivre l'évolution des opportunités selon plusieurs étapes prédéfinies : **_Nouveau_**, **_Qualifié_**, **_Proposition_**, **_Gagné_**.
-
-![](./images/crm-pipeline.png)
-
-On commence par créer une opportunité en renseignant ses informations.
-
-![](./images/crm-opportunite-new.png)
-
-L'opportunité peut donner lieu à un ou plusieurs **Devis** et peut être marqué comme gangé ou perdu.
-
-Le vendeur peut créer et suivre les **Réunions** relative à l'opprtunité directement à partir de son formulaire de définition.
-
-### Devis
-
-Cette section permet de gérer tous les devis crées par les vendeurs de l'entreprise, notamment ceux générés à partir des opportunités. Pour plus de détails, consulter le module [Vente](./odoo-vente.mdx).
-
-### Pipelines des équipes
-
-Cette section offre une tableau de bord synthétique des ventes effectuées pour chaque équipe commerciale, le même que celui du module [Vente](./odoo-vente.mdx).
-
-### Clients
-
-Cette section liste l'ensemble des clients ciblés par l'entreprise. Similaire à celle du module [Vente](./odoo-vente.mdx).
-
-## Pistes
-
-Si l'option pistes est activé dans la configuration du module, le **Responsable des ventes** peut créer de nouvelles pistes manuellement afin que les vendeurs les qualifies par la suite.  
-
-![](./images/crm-piste-new.png)
-
-Si une piste est probante, elle peut **_Convertie en opportunité_** et le vendeur aura la main pour ajouter un nouveau client avec les informations du contact saisies ou de fusionner avec un client/une opportunité existante.
-
-![](./images/crm-convertir-piste.png)
-
-Sinon, la piste peut être **_Marqué comme perdue_**.
-
-## Analyse
-
-La partie analyse permet aux **Gestionnaires des ventes** de visualiser des vues synthétiques sous différentes formes (listes, tableau croisé ou graphes) de la situation des **pistes**, du **pipeline** et des **activités**.
-
-## Workflow
-
-![](./diagrams/exports/activity-crm/activity-crm.png)
-
-## Plus de détails
-
-- Pour la collaboration sur les formulaires de ce module, consulter la fonctionnalité [conversations](./odoo-conversations.mdx).
-- [Site officiel d'odoo](https://www.odoo.com/fr_FR/page/crm).  
-
-
+**Configuration (admin)**
+ 
+:::info Accès restreint
+Cette section est réservée aux <strong>Administrateurs</strong> et aux <strong>Gestionnaires des ventes</strong>.
+:::
+ 
+Elle permet de définir les paramètres généraux du module : ajout d'une étape de qualification avant création d'une opportunité, génération des pistes, et configuration des équipes commerciales.
+ 
+---
+ 
+**Pistes**
+ 
+L'option **Pistes** active de nouvelles fonctionnalités permettant aux **Vendeurs** de disposer d'une section dédiée à la gestion et qualification des pistes.
+ 
+![Configuration de l'option Pistes](./images/crm-config-pistes.png)
+ 
+:::info Effet de l'activation
+Une fois l'option activée :
+- Un nouveau menu **Pistes** apparaît dans la barre de navigation
+- Le **Gestionnaire des ventes** peut choisir d'utiliser les **courriels entrants** pour alimenter automatiquement les pistes
+:::
+![Menu Piste](./images/crm-menu-piste.png)
 
 ---
-<br/>
-🔗 **Official Resource**: [Odoo Documentation](https://www.odoo.com/documentation)
+ 
+### **Équipes commerciales**
+ 
+Cette section permet de renseigner les informations nécessaires aux équipes commerciales de l'entreprise (responsables, membres, objectifs).
+ 
+➡️ Pour plus de détails, consulter le module [Vente](./odoo-vente.mdx).
+ 
+---
+ 
+### **Types d'activités**
+ 
+Cette section permet de prédéfinir l'ensemble des activités liées à la relation client : appels téléphoniques, envois d'emails, rendez-vous, etc.
+ 
+Pour chaque type d'activité, les paramètres suivants sont configurables :
+ 
+![Création d'un type d'activité](./images/crm-activite-new.png)
+ 
+---
+ 
+### **Pipeline — Étiquettes**
+ 
+Permet de prédéfinir des étiquettes à associer aux opportunités, comme les types de produits ou services proposés (formation, conseil, intégration, etc.).
+ 
+---
+ 
+### **Pipeline — Motifs de perte**
+ 
+Permet de prédéfinir les raisons pour lesquelles une opportunité ou une piste peut être perdue.
+ 
+**Exemples courants :**
+
+- 💰 Prix trop élevé
+- 🧠 Compétences insuffisantes 
+- 📦 Stock insuffisant
+- ⏳ Délais incompatibles
+- 🏆 Concurrent retenu
+---
+ 
+## **Vente**
+ 
+### **Mon Pipeline**
+ 
+Le pipeline est l'outil central du CRM. Il permet de suivre l'évolution des opportunités à travers quatre étapes prédéfinies :
+ 
+| Étape | Description |
+|-------|-------------|
+| 🔵 **Nouveau** | Opportunité créée, non encore qualifiée |
+| 🟣 **Qualifié** | Besoin confirmé, contact établi |
+| 🟡 **Proposition** | Devis ou offre commerciale envoyée |
+| 🟢 **Gagné** | Affaire conclue |
+ 
+![Vue Kanban du pipeline CRM](./images/crm-pipeline.png)
+ 
+Pour créer une opportunité, renseignez ses informations dans le formulaire dédié :
+ 
+![Formulaire de création d'une opportunité](./images/crm-opportunite-new.png)
+ 
+:::info Actions disponibles sur une opportunité
+- Générer un ou plusieurs **Devis**
+- Marquer comme **Gagnée** ou **Perdue** (avec motif)
+- Planifier et suivre les **Réunions** directement depuis le formulaire
+:::
+---
+ 
+### **Devis**
+ 
+Centralise tous les devis créés par les vendeurs, notamment ceux générés depuis les opportunités du pipeline.
+ 
+➡️ Pour plus de détails, consulter le module [Vente](./odoo-vente.mdx).
+ 
+---
+ 
+### **Pipelines des équipes**
+ 
+Tableau de bord synthétique des ventes réalisées par chaque équipe commerciale.
+ 
+➡️ Identique au tableau de bord du module [Vente](./odoo-vente.mdx).
+ 
+---
+ 
+### **Clients**
+ 
+Liste l'ensemble des clients et prospects ciblés par l'entreprise.
+ 
+➡️ Similaire à la section Clients du module [Vente](./odoo-vente.mdx).
+ 
+---
+ 
+## **Pistes**
+ 
+:::info Prérequis
+L'option **Pistes** doit être activée dans la configuration du module pour accéder à cette section.
+:::
+ 
+Le **Responsable des ventes** peut créer manuellement de nouvelles pistes, que les vendeurs qualifieront ensuite.
+ 
+![Création d'une nouvelle piste](./images/crm-piste-new.png)
+ 
+Une fois qualifiée, une piste peut suivre deux chemins :
+ 
+```
+Piste qualifiée
+├── ✅ Convertie en opportunité
+│     ├── Créer un nouveau client (depuis les infos du contact)
+│     └── Fusionner avec un client / une opportunité existante
+└── ❌ Marquée comme perdue
+```
+ 
+![Conversion d'une piste en opportunité](./images/crm-convertir-piste.png)
+ 
+---
+ 
+## **Analyse**
+ 
+Accessible aux **Gestionnaires des ventes**, cette section offre des vues synthétiques des données CRM sous trois formats :
+ 
+| Vue | Usage |
+|-----|-------|
+| 📋 **Liste** | Consultation détaillée ligne par ligne |
+| 🔲 **Tableau croisé** | Comparaison par dimensions (vendeur, étape, période) |
+| 📊 **Graphiques** | Visualisation des tendances et répartitions |
+ 
+Les données analysables couvrent les **pistes**, le **pipeline** et les **activités**.
+ 
+---
+ 
+## **Workflow**
+ 
+Le diagramme suivant illustre le flux complet des activités CRM, de la création d'une piste jusqu'à la conclusion de l'opportunité.
+ 
+![Diagramme d'activité CRM](./diagrams/exports/activity-crm/activity-crm.png)
+ 
+---
+ 
+## **Pour aller plus loin**
+ 
+| Ressource | Lien |
+|-----------|------|
+| Collaboration sur les formulaires | [Fonctionnalité Conversations](./odoo-conversations.mdx) |
+| Page produit CRM | [Site officiel Odoo CRM](https://www.odoo.com/fr_FR/page/crm) |
+| Documentation technique | [Odoo 18 Docs](https://www.odoo.com/documentation/18.0/applications/sales/crm.html) |
+ 
+---
+ 
+🔗 **Ressource officielle** : [Documentation Odoo](https://www.odoo.com/documentation)
+ 
+<video controls width="100%">
+  <source src="/videos/crm-pistes.mp4" type="video/mp4" />
+  Votre navigateur ne supporte pas la lecture de vidéos.
+</video>
